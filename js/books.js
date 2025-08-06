@@ -136,15 +136,15 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
   });
 }
 
-// Utility function: Generate share link slug
 function generateShareLink(title) {
   const slug = title
     .toLowerCase()
     .trim()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-');
-  return `https://yourbookstore.com/share/${slug}`;
+    .replace(/[^\w\s-]/g, '') 
+    .replace(/\s+/g, '-')     
+    .replace(/-+/g, '-');     
+
+  return `https://nimanwijerathna.github.io/The-Bookmarked-Life/share/${slug}`;
 }
 
 // Utility function: escape HTML for security
