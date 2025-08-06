@@ -144,7 +144,7 @@ function generateShareLink(title) {
     .replace(/\s+/g, '-')     
     .replace(/-+/g, '-');     
 
-  return `https://nimanwijerathna.github.io/The-Bookmarked-Life/share/${slug}`;
+  return `https://nimanwijerathna.github.io/The-Bookmarked-Life/${slug}`;
 }
 
 // Utility function: escape HTML for security
