@@ -3196,3 +3196,54 @@ th:last-child, td:last-child { padding-right: 0; }
   #billboard button.slick-arrow { width: 40px; height: 40px; }
   #billboard .slick-arrow i.icon { font-size: 20px; }
 }
+
+.subscribe-banner {
+  position: relative;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* Main image (already responsive from img-fluid/w-100) */
+
+.banner-overlay-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+  width: auto;
+  border-radius: 1rem;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+  z-index: 3;
+  background: #fff;
+  padding: 6px;
+  /* Animation properties */
+  opacity: 0;
+  animation: upFadeIn 23s cubic-bezier(0.22, 0.68, 0.57, 1) 0.2s forwards;
+}
+
+/* Keyframes for from-down-to-up and fade-in */
+@keyframes upFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 60%);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -30%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .banner-overlay-image {
+    width: 150px;
+    max-width: 65%;
+    padding: 2px;
+  }
+}
