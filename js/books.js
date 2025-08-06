@@ -43,52 +43,53 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
 
   // Generate book cards
   let html = '<div class="row">';
-  booksToShow.forEach((book, idx) => {
-    const encodedShareLink = encodeURIComponent(book.shareLink || generateShareLink(book.title));
+  booksToShow.forEach((book) => {
 
     // Movie badge and link HTML, conditionally rendered
-    const movieHTML = book.hasMovie
+    const movieHTML = book.hasMovie && book.movieLink
       ? `<div class="movie-available mb-2" style="font-size:.8em;">
-           🎬 <a href="${book.movieLink}" target="_blank" rel="noopener" title="Watch the movie">Movie Available</a>
-         </div>`
+         🎬 <a href="${book.movieLink}" target="_blank" rel="noopener" title="Watch the movie">Movie Available</a>
+       </div>`
+      : '';
+
+    // PDF badge and link HTML, conditionally rendered
+    const pdfHTML = book.hasPdf && book.pdfLink
+      ? `<div class="pdf-available mb-2" style="font-size:.8em;">
+         📄 <a href="${book.pdfLink}" target="_blank" rel="noopener" title="Read the PDF">PDF Available</a>
+       </div>`
       : '';
 
     html += `
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex align-items-stretch">
-        <div class="card h-100 shadow-sm border rounded product-item p-3 d-flex flex-column">
-          <figure class="product-style d-flex justify-content-center align-items-center mb-3" style="height:400px;">
-            <img src="${book.image}" alt="${escapeHtml(book.title)}" class="img-fluid mx-auto d-block">
-          </figure>
-          <figcaption class="flex-grow-1">
-            <h3>${escapeHtml(book.title)}</h3>
-            <i class="text-muted d-block mb-1">By ${escapeHtml(book.author)}</i>
-            <div class="mb-1">Pages: ${book.pages}</div>
-            <div style="color:#f5a623; font-size:1em;" class="mb-1">
-              ${"★".repeat(book.stars)}${"☆".repeat(5 - book.stars)}
-              <span style="font-size:.9em; color:#666;">(${book.rating}/5)</span>
-            </div>
-            ${movieHTML}
-            ${book.description ? `<p style="font-size:.8em;">${escapeHtml(book.description)}</p>` : ""}
-          </figcaption>
-          <div class="share-buttons d-flex justify-content-center gap-2 flex-wrap mt-auto">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=${encodedShareLink}" target="_blank" rel="noopener" title="Share on Facebook" class="btn btn-outline-primary btn-sm" aria-label="Share ${escapeHtml(book.title)} on Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://api.whatsapp.com/send?text=${encodedShareLink}" target="_blank" rel="noopener" title="Share on WhatsApp" class="btn btn-outline-success btn-sm" aria-label="Share ${escapeHtml(book.title)} on WhatsApp">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://t.me/share/url?url=${encodedShareLink}" target="_blank" rel="noopener" title="Share on Telegram" class="btn btn-outline-info btn-sm" aria-label="Share ${escapeHtml(book.title)} on Telegram">
-              <i class="fab fa-telegram-plane"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener" title="Share on Instagram" class="btn btn-outline-danger btn-sm" aria-label="Share ${escapeHtml(book.title)} on Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex align-items-stretch">
+      <div class="card h-100 shadow-sm border rounded product-item p-3 d-flex flex-column">
+        <figure class="product-style d-flex justify-content-center align-items-center mb-3" style="height:400px;">
+          <img src="${book.image}" alt="${escapeHtml(book.title)}" class="img-fluid mx-auto d-block">
+        </figure>
+        <figcaption class="flex-grow-1">
+          <h3>${escapeHtml(book.title)}</h3>
+          <i class="text-muted d-block mb-1">By ${escapeHtml(book.author)}</i>
+          <div class="mb-1">Pages: ${book.pages}</div>
+          <div style="color:#f5a623; font-size:1em;" class="mb-1">
+            ${"★".repeat(book.stars)}${"☆".repeat(5 - book.stars)}
+            <span style="font-size:.9em; color:#666;">(${book.rating}/5)</span>
           </div>
-        </div>
+          ${movieHTML}
+          ${pdfHTML}
+          ${book.description ? `<p style="font-size:.8em;">${escapeHtml(book.description)}</p>` : ""}
+        </figcaption>
       </div>
-    `;
+    </div>
+  `;
   });
   html += '</div>';
+  // If no books found, show a message
+  if (totalBooks === 0) {
+    html += '<div class="col-12 text-center"><p>No books found.</p></div>';
+  } else {
+    html += `<div class="col-12 text-center mt-4">
+      <p class="text-muted">Showing ${startIndex + 1} to ${Math.min(endIndex, totalBooks)} of ${totalBooks} books in "${escapeHtml(category)}"</p>
+    </div>`;
+  }
 
   // Add pagination controls (if needed)
   if (totalPages > 1) {
@@ -134,17 +135,6 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
       }
     });
   });
-}
-
-function generateShareLink(title) {
-  const slug = title
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g, '') 
-    .replace(/\s+/g, '-')     
-    .replace(/-+/g, '-');     
-
-  return `https://nimanwijerathna.github.io/The-Bookmarked-Life/${slug}`;
 }
 
 // Utility function: escape HTML for security

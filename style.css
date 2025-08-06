@@ -3220,7 +3220,7 @@ th:last-child, td:last-child { padding-right: 0; }
   padding: 6px;
   /* Animation properties */
   opacity: 0;
-  animation: upFadeIn 23s cubic-bezier(0.22, 0.68, 0.57, 1) 0.2s forwards;
+  animation: upFadeIn 33s cubic-bezier(0.22, 0.68, 0.57, 1) 0.2s forwards;
 }
 
 /* Keyframes for from-down-to-up and fade-in */
@@ -3239,11 +3239,50 @@ th:last-child, td:last-child { padding-right: 0; }
   }
 }
 
-
 @media (max-width: 768px) {
   .banner-overlay-image {
     width: 150px;
     max-width: 65%;
     padding: 2px;
   }
+}
+
+@media (max-width: 767.98px) {
+  .quote-overlay {
+    padding: 1.2rem 0.7rem !important;  /* Reduce side paddings */
+    font-size: 1rem !important;
+    max-width: 96vw;
+  }
+  .quote-overlay blockquote,
+  .quote-overlay q {
+    font-size: 1rem !important;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+  .quote-overlay blockquote,
+  .quote-overlay .author-name {
+    font-size: .8rem !important;
+    line-height: 1;
+  }
+  .quote-overlay {
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    min-width: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .quote-overlay {
+    padding: 0.8rem 0.4rem !important;
+    font-size: 0.96rem !important;
+    max-width: 99vw;
+  }
+  .quote-overlay blockquote,
+  .quote-overlay q {
+    font-size: 0.95rem !important;
+    line-height: 1.45;
+  }
+}
+.quote-overlay blockquote {
+  word-break: break-word;
+  white-space: normal;
 }
