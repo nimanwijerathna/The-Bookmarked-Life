@@ -3249,7 +3249,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 @media (max-width: 767.98px) {
   .quote-overlay {
-    padding: 1.2rem 0.7rem !important;  /* Reduce side paddings */
+    padding: 1.2rem 0.7rem !important; 
     font-size: 1rem !important;
     max-width: 96vw;
   }
