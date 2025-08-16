@@ -1535,27 +1535,6 @@ button {
   transform: scale(1.1);
 }
 
-
-/*--- Pattern Overlay
------------------------------------------------*/
-.pattern-overlay {
-  background-image: url(images/pattern1.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-
-.leaf-pattern-overlay {
-  background-image: url(images/leaf.png);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-}
-
-.corner-pattern-overlay {
-  background-image: url(images/pattern2.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-
 /*--- Page Title
 -----------------------------------------------*/
 .page-title {
@@ -1800,8 +1779,41 @@ img.post-image {
 
 /*----- Billboard
 --------------------------------------------------------------*/
-#billboard .main-slider {
-  padding: 80px 0;
+/* Each slide has its own background */
+.slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 850px;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 150px 0;
+  margin: 0;
+}
+
+.slider-item::before {
+  /* optional dark overlay for readability */
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.slider-item .banner-content {
+  position: relative; /* so it sits above overlay */
+  max-width: 1200px;
+}
+
+/* individual slide images */
+.slide-sh {
+  background-image: url("https://wallpapercave.com/wp/wp5299939.jpg");
+}
+.slide-hp {
+  background-image: url("https://variety.com/wp-content/uploads/2022/08/The_Next_365_Days_00_09_58_12_RT.jpg");
+}
+.slide-vd {
+  background-image: url("https://th.bing.com/th/id/R.3f2168c3dd7a31bf994268e980672450?rik=kXZ6VMfMJJvnTQ&riu=http%3a%2f%2fwww.heyuguys.com%2fimages%2f2010%2f06%2fDiary-of-a-Wimpy-Kid.jpg&ehk=PjMHQCjVma0xrk2hCDvceCm%2fFgOiWCurGtak36Xw5Ko%3d&risl=&pid=ImgRaw&r=0");
 }
 
 .main-slider .slider-item {
@@ -1824,6 +1836,7 @@ img.post-image {
 
 .banner-content p {
   margin: 0 0 30px 0;
+  color: #e0dfdf;
 }
 
 #billboard .slick-dots {
@@ -1879,7 +1892,7 @@ img.post-image {
   }
 
   #billboard .main-slider {
-    margin: 70px 0;
+    margin: 10px 0;
     padding: 0;
   }
 

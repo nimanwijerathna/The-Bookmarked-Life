@@ -88,9 +88,9 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
           <i class="text-muted d-block mb-1">By ${escapeHtml(book.author)}</i>
           <div class="mb-1">Pages: ${book.pages}</div>
           <div style="color:#f5a623; font-size:1em;" class="mb-1">
-  ${"★".repeat(Math.round(book.rating))}${"☆".repeat(5 - Math.round(book.rating))}
-  <span style="font-size:.9em; color:#666;">(${book.rating}/5)</span>
-</div>
+          ${"★".repeat(Math.round(book.rating))}${"☆".repeat(5 - Math.round(book.rating))}
+          <span style="font-size:.9em; color:#666;">(${book.rating}/5)</span>
+          </div>
           ${movieHTML}
           ${pdfHTML}
           ${book.description ? `<p style="font-size:.8em;">${escapeHtml(book.description)}</p>` : ""}
