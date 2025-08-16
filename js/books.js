@@ -45,11 +45,18 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
   let html = '<div class="row">';
   booksToShow.forEach((book) => {
   
-  // Adult tag HTML (inside loop so we can read book.isAdult)
+  // Adult tag HTML
   const adultHTML = book.isAdult
     ? `<div class="adult-badge position-absolute top-0 start-0 m-2 px-2 py-1">
          18+
        </div>`
+    : '';
+
+    // Upcoming tag HTML 
+  const upcomingHTML = book.isUpcoming
+    ? `<div class="upcoming-badge position-absolute bottom-0 start-0 m-2 px-3 py-1">
+       Upcoming Releases
+     </div>`
     : '';
 
   // Movie badge
@@ -72,6 +79,7 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
         
         <figure class="product-style d-flex justify-content-center align-items-center mb-3 position-relative" style="height:400px;">
           ${adultHTML}
+          ${upcomingHTML}
           <img src="${book.image}" alt="${escapeHtml(book.title)}" class="img-fluid mx-auto d-block">
         </figure>
 

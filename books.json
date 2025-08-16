@@ -1178,5 +1178,18 @@
     "hasMovie": false,
     "hasPdf": true,
     "pdfLink": "https://t.me/TheBookmarkedLife/109"
+  },
+  {
+    "isUpcoming": true,
+    "title": "Diary of a wimpy kid Partypooper Book #20",
+    "author": "Jeff Kinney",
+    "category": "Young Adult",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Diary_of_a_Wimpy_Kid_Party_Pooper.jpg/250px-Diary_of_a_Wimpy_Kid_Party_Pooper.jpg",
+    "description": "The plot centers around Greg Heffley expecting a surprise birthday party which does not happen. Even worse, his whole family has forgotten it was his birthday. After the disappointing incident goes viral, his parents are Facebook-shamed and guilted into throwing him a 'blowout' party which Greg plans to maximize for presents.",
+    "rating": 0,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": false,
+    "pdfLink": "#"
   }
 ]
