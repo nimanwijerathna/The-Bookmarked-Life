@@ -3286,3 +3286,12 @@ th:last-child, td:last-child { padding-right: 0; }
   word-break: break-word;
   white-space: normal;
 }
+
+.adult-badge {
+  background: linear-gradient(135deg, white,#ff0090, rgb(255, 0, 0), #000000);
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}

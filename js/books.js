@@ -44,35 +44,45 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
   // Generate book cards
   let html = '<div class="row">';
   booksToShow.forEach((book) => {
+  
+  // Adult tag HTML (inside loop so we can read book.isAdult)
+  const adultHTML = book.isAdult
+    ? `<div class="adult-badge position-absolute top-0 start-0 m-2 px-2 py-1">
+         18+
+       </div>`
+    : '';
 
-    // Movie badge and link HTML, conditionally rendered
-    const movieHTML = book.hasMovie && book.movieLink
-      ? `<div class="movie-available mb-2" style="font-size:.8em;">
+  // Movie badge
+  const movieHTML = book.hasMovie && book.movieLink
+    ? `<div class="movie-available mb-2" style="font-size:.8em;">
          🎬 <a href="${book.movieLink}" target="_blank" rel="noopener" title="Watch the movie">Movie Available</a>
        </div>`
-      : '';
+    : '';
 
-    // PDF badge and link HTML, conditionally rendered
-    const pdfHTML = book.hasPdf && book.pdfLink
-      ? `<div class="pdf-available mb-2" style="font-size:.8em;">
+  // PDF badge
+  const pdfHTML = book.hasPdf && book.pdfLink
+    ? `<div class="pdf-available mb-2" style="font-size:.8em;">
          📄 <a href="${book.pdfLink}" target="_blank" rel="noopener" title="Read the PDF">PDF Available</a>
        </div>`
-      : '';
+    : '';
 
-    html += `
+  html += `
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex align-items-stretch">
-      <div class="card h-100 shadow-sm border rounded product-item p-3 d-flex flex-column">
-        <figure class="product-style d-flex justify-content-center align-items-center mb-3" style="height:400px;">
+      <div class="card h-100 shadow-sm border rounded product-item p-3 d-flex flex-column position-relative">
+        
+        <figure class="product-style d-flex justify-content-center align-items-center mb-3 position-relative" style="height:400px;">
+          ${adultHTML}
           <img src="${book.image}" alt="${escapeHtml(book.title)}" class="img-fluid mx-auto d-block">
         </figure>
+
         <figcaption class="flex-grow-1">
           <h3>${escapeHtml(book.title)}</h3>
           <i class="text-muted d-block mb-1">By ${escapeHtml(book.author)}</i>
           <div class="mb-1">Pages: ${book.pages}</div>
           <div style="color:#f5a623; font-size:1em;" class="mb-1">
-            ${"★".repeat(book.stars)}${"☆".repeat(5 - book.stars)}
-            <span style="font-size:.9em; color:#666;">(${book.rating}/5)</span>
-          </div>
+  ${"★".repeat(Math.round(book.rating))}${"☆".repeat(5 - Math.round(book.rating))}
+  <span style="font-size:.9em; color:#666;">(${book.rating}/5)</span>
+</div>
           ${movieHTML}
           ${pdfHTML}
           ${book.description ? `<p style="font-size:.8em;">${escapeHtml(book.description)}</p>` : ""}
@@ -80,7 +90,7 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
       </div>
     </div>
   `;
-  });
+});
   html += '</div>';
   // If no books found, show a message
   if (totalBooks === 0) {
