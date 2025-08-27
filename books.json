@@ -24,7 +24,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/9"
+    "telegramMessageId": 9
   },
   {
     "title": "It ends with us",
@@ -36,7 +36,9 @@
     "rating": 4.8,
     "stars": 5,
     "hasMovie": true,
-    "movieLink": "https://t.me/+6nJOaN6Uglk0N2Jl/12"
+    "hasPdf": true,
+    "telegramMessageId": 12,
+    "movieLink": "https://ridomovies.tv/movies/it-ends-with-us-rd10"
     },
     {
     "title": "Ugly love",
@@ -47,7 +49,9 @@
     "description": "The story of Tate and Miles, whose intense, no-strings-attached relationship explores the complexities of love, heartbreak, and emotional healing",
     "rating": 4.5,
     "stars": 5,
-    "hasMovie": false
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 0
   },
   {
     "title": "What have you done",
@@ -58,7 +62,9 @@
     "description": "A psychological thriller about a shocking crime that unravels a family's secrets, exploring themes of betrayal and the lengths people will go to protect themselves.",
     "rating": 4.1,
     "stars": 5,
-    "hasMovie": false
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 0
   },
   {
     "title": "I've got my eyes on you",
@@ -71,7 +77,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/15"
+    "telegramMessageId": 15
   },
   {
     "title":"The perfect girlfriend",
@@ -84,7 +90,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/16"
+    "telegramMessageId": 16
   },
   {
   "title": "සිව් රහස් සලකුණ",
@@ -97,7 +103,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/45"
+  "telegramMessageId": 45
   },
   {
   "title": "බැස්කවිල් රුදුරු බල්ලා",
@@ -110,7 +116,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink":"https://t.me/+6nJOaN6Uglk0N2Jl/46"
+  "telegramMessageId": 46
   },
 {
   "title": "බිහිසුණු නිම්නය",
@@ -123,7 +129,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink":"https://t.me/+6nJOaN6Uglk0N2Jl/47"
+  "telegramMessageId": 47
   },
 {
   "title": "මළගිය ඇත්තෝ සාක්කි දෙති!",
@@ -136,7 +142,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink":"https://t.me/+6nJOaN6Uglk0N2Jl/48"
+  "telegramMessageId": 48
   },
   {
   "title": "ලේ සලකුණ",
@@ -149,7 +155,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/49"
+  "telegramMessageId": 49
   },
   {
   "title": "අන්තරාය අඩවියක",
@@ -162,7 +168,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink":"https://t.me/+6nJOaN6Uglk0N2Jl/50"
+  "telegramMessageId": 50
   },
   {
   "title": "මහ රෑ ආ මාරයා",
@@ -175,7 +181,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdflink": "https://t.me/+6nJOaN6Uglk0N2Jl/51"
+  "telegramMessageId": 51
   },
   {
   "title": "ඉන්ද්‍රනීල මානික්‍යය",
@@ -188,7 +194,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdflink": "https://t.me/+6nJOaN6Uglk0N2Jl/52"
+  "telegramMessageId": 52
   },
   {
   "title": "දියමන්ති ඔටුන්න",
@@ -201,7 +207,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/53"
+  "telegramMessageId": 53
   },
   {
   "title": "ලෝහිත පරීක්ෂණය",
@@ -214,7 +220,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/54"
+  "telegramMessageId": 54
   },
   {
   "title": "ඔබෙන් සමුගනිමි",
@@ -227,7 +233,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/55"
+  "telegramMessageId": 55
   },
   {
   "title": "පුද්ගලිකයි රහසිගතයි",
@@ -240,7 +246,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/57"
+  "telegramMessageId": 57
   },
   {
   "title": "ඩ්‍රැකියුලාට එරෙහිව ෂර්ලොක් හෝම්ස්",
@@ -253,7 +259,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/58"
+  "telegramMessageId": 58
   },
   {
   "title": "භයානක මිනිහා",
@@ -266,7 +272,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/59"
+  "telegramMessageId": 59
   },
   {
   "title": "රතුවත හැඳි කත",
@@ -279,7 +285,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/61"
+  "telegramMessageId": 61
   },
   {
   "title": "ප්‍රදීපාගාරයේ වික්‍රමය",
@@ -292,7 +298,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/62"
+  "telegramMessageId": 62
   },
   {
   "title": "අභිරහස් දොස්තර සමඟ ෂර්ලොක් හෝම්ස්",
@@ -305,7 +311,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/63"
+  "telegramMessageId": 63
   },
   {
   "title": "ගින්දර සමග සෙල්ලම්",
@@ -318,7 +324,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/64"
+  "telegramMessageId": 64
   },
   {
   "title": "සමුදුරේ සටන",
@@ -331,7 +337,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/65"
+  "telegramMessageId": 65
   },
   {
   "title": "භීෂණයක්",
@@ -344,7 +350,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/66"
+  "telegramMessageId": 66
   },
   {
   "title": "රුසියානු ඔත්තුකාරයා",
@@ -357,7 +363,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/67"
+  "telegramMessageId": 67
   },
   {
   "title": "මර උගුල",
@@ -370,7 +376,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/68"
+  "telegramMessageId": 68
   },
   {
   "title": "හදිසි අනතුර",
@@ -383,7 +389,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/69"
+  "telegramMessageId": 69
   },
   {
   "title": "අද්භූත ආගන්තුකයා",
@@ -396,7 +402,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/70"
+  "telegramMessageId": 70
   },
   {
   "title": "ඊජිප්තු ශාපය",
@@ -407,7 +413,7 @@
   "description": "නමුත් මේ වගේ අපරාධයක් මීට පෙර කවදාවත් එංගලන්තයේදි සිදුවුණේ නෑ. දැන් ඒකත් පටන් අරගෙන වගෙයි. ඔය වගේ ප්‍රහාරයක් ෆර්ගසන් සාමිට එල්ල වුණා නම්. මං එව්වර පුදුම වෙන්නෙ නෑ. ඒ මොකද මේ ගවේෂණයට මුදල් යෙදෙව්වේ ඔහු, සොයාගත් ඒව විකුණල විශාල මුදලක් උපයා ගත්තෙත් ඔහු. මුතු මැණික් රත්රන් තවමත් ඉතිරිව තිබෙනවා නම්. ඒව තිබෙන්නෙත් ඔහු ළඟ. හෝම්ස් මහත්මයා, පුරාවිද්‍යාඥයන් වන අප ළඟ අන්තිමට ඉතිරි වෙන්නෙ මොනවද? රූපාක්ෂර ලියූ බදාම කැබලි, මිනී ඇටකටු; එවැනි දේ මිස රත්රන් සහ මුතුමැණික් නොවෙයි.",
   "rating": 4.5,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/71"
+  "telegramMessageId": 71
   },
   {
   "title": "වැරදුණු දඩයම",
@@ -420,7 +426,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/71"
+  "telegramMessageId": 71
   },
   {
   "title": "මාරක සටන",
@@ -433,7 +439,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/72"
+  "telegramMessageId": 72
   },
   {
   "title": "වෙඩි හඬ",
@@ -446,7 +452,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/73"
+  "telegramMessageId": 73
   },
   {
   "title": "සුරූපී නළඟන",
@@ -459,7 +465,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/74"
+  "telegramMessageId": 74
   },
   {
   "title": "මුහුදු ගිනිඅවිය",
@@ -472,7 +478,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/75"
+  "telegramMessageId": 75
   },
   {
   "title": "රන් දෙවඟන සහ තවත් ෂර්ලොක් හොම්ස් කථා",
@@ -485,7 +491,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/76"
+  "telegramMessageId": 76
   },
   {
   "title": "ඝාතකයා නිදැල්ලේ",
@@ -498,7 +504,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/77"
+  "telegramMessageId": 77
   },
   {
   "title": "මැණික් කොල්ලය සහ තවත් ෂර්ලොක් හෝම්ස් කථා",
@@ -511,7 +517,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/78"
+  "telegramMessageId": 78
   },
   {
   "title": "කළු ව්‍යාඝ්‍රයා",
@@ -524,7 +530,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/81"
+  "telegramMessageId": 81
   },
   {
   "title": "ඕලන්ද නෞකාව",
@@ -537,7 +543,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/82"
+  "telegramMessageId": 82
   },
   {
   "title": "ෂර්ලොක් හෝම්ස් ආපසු එයි",
@@ -550,59 +556,59 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/83"
+  "telegramMessageId": 83
   },
   {
-    "title": "පාලි-සිංහල පිරුවානා පොත්වහන්සේ",
-    "author": "පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ",
-    "pages": 200,
-    "category": ["Religion","සිංහල"],
-    "image": "https://www.mahamevnawa.org.au/wp-content/uploads/2021/08/PAV01_PiruwanaPothWahanseHardCover.jpg",
-    "description": "මේ මහා භද්‍ර කල්පයෙහි ලොව පහල වී වදාල සතරවෙනි බුදුරජාණන් වහන්සේ වන අපගේ ගෞතම බුදුරජාණන් වහන්සේගේ මාර්ගෝපදේශකත්වයත්, රැකවරණයත්, ආරක්ෂාවත් උදෙසා අපි ඉතාමත් ශ්‍රද්ධාවෙන් තෙරුවන් සරණ යමු. දුර්ලභ මිනිස් ජීවිතය වෙත සදාකාලික ආලෝකයක් උදාකරදිය හැක්කේ පරම දුර්ලභ වූ බුදු සසුනට පමණි. තෙරුවන් සරණ ගිය බෞද්ධයා මෙකරුණ මැනවින් සිහියේ දරා සිටින්නෙකි. ඒ නිසා දෛනික ජීවිතයේ විශේෂ අවස්ථාවන් හිදී ආශිර්වාදය සලසා ගන්නේ උතුම් තෙරුවන් සරණ තුලින්මය. බාහිර පිහිටක්, පිළිසරණක් සැබෑ බෞද්ධයෙකුට අයත් දෙයක් නොවේ. ඒ නිසාම ලක්දිව වැඩසිටි ත්‍රිපිටකධාරී මහතෙරුන් වහන්සේලා විසින් සැදැහැවත් බෞද්ධයන්ගේ ජීවිතවලට ආරක්ෂාවත් ජීවිතවල සැනසීමත් යහපතත් උදෙසා සියවස් ගණනක් මුලුල්ලේ භාවිතයට පැමිණි පිරිත් පොත අපේ රට තුල සම්භාවනාවට පත් වූයේ පිරුවානා පොත්වහන්සේ නමනි.",
-    "rating": 5,
-    "stars": 5,
-    "hasMovie": false,
-    "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/18"
+  "title": "පාලි-සිංහල පිරුවානා පොත්වහන්සේ",
+  "author": "පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ",
+  "pages": 200,
+  "category": ["Religion","සිංහල"],
+  "image": "https://www.mahamevnawa.org.au/wp-content/uploads/2021/08/PAV01_PiruwanaPothWahanseHardCover.jpg",
+  "description": "මේ මහා භද්‍ර කල්පයෙහි ලොව පහල වී වදාල සතරවෙනි බුදුරජාණන් වහන්සේ වන අපගේ ගෞතම බුදුරජාණන් වහන්සේගේ මාර්ගෝපදේශකත්වයත්, රැකවරණයත්, ආරක්ෂාවත් උදෙසා අපි ඉතාමත් ශ්‍රද්ධාවෙන් තෙරුවන් සරණ යමු. දුර්ලභ මිනිස් ජීවිතය වෙත සදාකාලික ආලෝකයක් උදාකරදිය හැක්කේ පරම දුර්ලභ වූ බුදු සසුනට පමණි. තෙරුවන් සරණ ගිය බෞද්ධයා මෙකරුණ මැනවින් සිහියේ දරා සිටින්නෙකි. ඒ නිසා දෛනික ජීවිතයේ විශේෂ අවස්ථාවන් හිදී ආශිර්වාදය සලසා ගන්නේ උතුම් තෙරුවන් සරණ තුලින්මය. බාහිර පිහිටක්, පිළිසරණක් සැබෑ බෞද්ධයෙකුට අයත් දෙයක් නොවේ. ඒ නිසාම ලක්දිව වැඩසිටි ත්‍රිපිටකධාරී මහතෙරුන් වහන්සේලා විසින් සැදැහැවත් බෞද්ධයන්ගේ ජීවිතවලට ආරක්ෂාවත් ජීවිතවල සැනසීමත් යහපතත් උදෙසා සියවස් ගණනක් මුලුල්ලේ භාවිතයට පැමිණි පිරිත් පොත අපේ රට තුල සම්භාවනාවට පත් වූයේ පිරුවානා පොත්වහන්සේ නමනි.",
+  "rating": 5,
+  "stars": 5,
+  "hasMovie": false,
+  "hasPdf":true,
+  "telegramMessageId": 18
   },
   {
-    "title": "ස්වර්ණමාලී මහා සෑ වන්දනාව",
-    "author": "පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ",
-    "pages": 76,
-    "category": ["Religion","සිංහල"],
-    "image": "https://mahamegha.store/wp-content/uploads/2020/05/SwarnamaliMahaSeVandanawa.jpg",
-    "description": "ද්‍රෝණයක් සර්වඥ ධාතූන් වහන්සේලා විරාජමානව වැඩසිටින තුන් ලොවේ ම අග්‍ර වූ උතුම් ස්වර්ණමාලි මහ සෑ රදුන් අවබෝධයෙන් යුතුවම වන්දනා කරගෙන අපමණ පින්ඵල නෙලනු රිසි ඔබ වෙනුවෙන් ම සැකසී ඇති වන්දනා අත්පොතකි. විශේෂයෙන්ම පද්‍යානුසාරයෙන් මහ සෑ වරුණ ඉදිරිපත් කොට තිබේ. එමෙන්ම තෙරුවන් ගුණ ගැයෙන වන්දනා කවි පෙළක් ද මහා සෑයේ අසිරිය හා සැබැඳුන වටිනා ධර්ම දේශනාවක් ද අන්තර්ගත වී තිබේ. ස්වර්ණමාලී මහ සෑය වන්දනා කිරීමට යන ඔබ අත තිබිය යුතුම වටිනා වන්දනා අත්පොතකි.",
-    "rating": 5,
-    "stars": 5,
-    "hasMovie": false,
-    "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/17"
+  "title": "ස්වර්ණමාලී මහා සෑ වන්දනාව",
+  "author": "පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ",
+  "pages": 76,
+  "category": ["Religion","සිංහල"],
+  "image": "https://mahamegha.store/wp-content/uploads/2020/05/SwarnamaliMahaSeVandanawa.jpg",
+  "description": "ද්‍රෝණයක් සර්වඥ ධාතූන් වහන්සේලා විරාජමානව වැඩසිටින තුන් ලොවේ ම අග්‍ර වූ උතුම් ස්වර්ණමාලි මහ සෑ රදුන් අවබෝධයෙන් යුතුවම වන්දනා කරගෙන අපමණ පින්ඵල නෙලනු රිසි ඔබ වෙනුවෙන් ම සැකසී ඇති වන්දනා අත්පොතකි. විශේෂයෙන්ම පද්‍යානුසාරයෙන් මහ සෑ වරුණ ඉදිරිපත් කොට තිබේ. එමෙන්ම තෙරුවන් ගුණ ගැයෙන වන්දනා කවි පෙළක් ද මහා සෑයේ අසිරිය හා සැබැඳුන වටිනා ධර්ම දේශනාවක් ද අන්තර්ගත වී තිබේ. ස්වර්ණමාලී මහ සෑය වන්දනා කිරීමට යන ඔබ අත තිබිය යුතුම වටිනා වන්දනා අත්පොතකි.",
+  "rating": 5,
+  "stars": 5,
+  "hasMovie": false,
+  "hasPdf":true,
+  "telegramMessageId": 17
   },
   {
-    "title": "තෝරා ගනිමු සැබෑම නායකත්වය",
-    "author": "පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ",
-    "pages": 91,
-    "category": ["Religion","සිංහල"],
-    "image": "https://www.mahamevnawa.org.au/wp-content/uploads/2021/08/DPB01_Thoraganimu_Sebema_Nayakathwaya.jpg",
-    "description": "සාර්ථක ජීවිතයක් පිණිස නොවරදින මගහසර පෙන්වා දෙන ශ්‍රේෂ්ඨ නායකත්වයක් තෝරා ගැනීමේදී අප විසින් සැලකිලිමත් විය යුතු කරුණු බොහෝය. ඒ පිළිබඳව මධ්‍යස්ථව කරුණු විග්‍රහ වී ඇති මෙම සදහම් ග්‍රන්ථය පරිශීලනය කරන ඔබට මුණගැසෙන්නේ තුන් ලොවටම ආලෝකයක් වූ ලොව පහළ වී වදාළ ශ්‍රේෂ්ඨතම මාර්ගෝපදේශකයාණන් වහන්සේවයි. එමෙන්ම, සැබෑ නායකත්වයෙන් පෙන්වා දෙන සුන්දර වැඩපිළිවළ ද, ජීවිතය පිළිබඳව විදර්ශනා නුවණ දියුණු කරන අනිත්‍ය භාවනාවක් ද මෙහිදී ඔබට තිළිණ වී ඇත.",
-    "rating": 5,
-    "stars": 5,
-    "hasMovie": false,
-    "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/20"
+  "title": "තෝරා ගනිමු සැබෑම නායකත්වය",
+  "author": "පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ",
+  "pages": 91,
+  "category": ["Religion","සිංහල"],
+  "image": "https://www.mahamevnawa.org.au/wp-content/uploads/2021/08/DPB01_Thoraganimu_Sebema_Nayakathwaya.jpg",
+  "description": "සාර්ථක ජීවිතයක් පිණිස නොවරදින මගහසර පෙන්වා දෙන ශ්‍රේෂ්ඨ නායකත්වයක් තෝරා ගැනීමේදී අප විසින් සැලකිලිමත් විය යුතු කරුණු බොහෝය. ඒ පිළිබඳව මධ්‍යස්ථව කරුණු විග්‍රහ වී ඇති මෙම සදහම් ග්‍රන්ථය පරිශීලනය කරන ඔබට මුණගැසෙන්නේ තුන් ලොවටම ආලෝකයක් වූ ලොව පහළ වී වදාළ ශ්‍රේෂ්ඨතම මාර්ගෝපදේශකයාණන් වහන්සේවයි. එමෙන්ම, සැබෑ නායකත්වයෙන් පෙන්වා දෙන සුන්දර වැඩපිළිවළ ද, ජීවිතය පිළිබඳව විදර්ශනා නුවණ දියුණු කරන අනිත්‍ය භාවනාවක් ද මෙහිදී ඔබට තිළිණ වී ඇත.",
+  "rating": 5,
+  "stars": 5,
+  "hasMovie": false,
+  "hasPdf":true,
+  "telegramMessageId": 20
   },
   {
-    "title": "සැබෑ බසින් මෙම සෙත සැලසේවා",
-    "author": "පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ",
-    "pages": 154,
-    "category": ["Religion","සිංහල"],
-    "image": "https://tse1.explicit.bing.net/th/id/OIP.oMr3gphyubc6184_36crdAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
-    "description": "ලක්වාසී බෞද්ධ බොහෝ දෙනා තුන් සූත්‍රය කටපාඩමින් දනිති. ආශිර්වාද පතා සජ්ඣායනය ද කරති. නමුත් එම උතුම් මහා මංගල සූත්‍රය, රතන සූත්‍රය, කරණීය මෙත්ත සූත්‍රය යන දේශනාවන්වලින් ඉස්මතු වන පරම ගම්භීර වූ අරුත් බොහෝ දෙනා නොදනිති. ඒ නිසා ම එමගින් උපදවාගත හැකි සැබෑම පිළිසරණ සලසා ගැනීමේ අවස්ථාව බොහෝ දෙනාට අහිමි වී තිබේ. මෙම සදහම් ග්‍රන්ථය තුළ අන්තර්ගත වී තිබෙන්නේ එම උතුම් දේශනාවන්ගේ අරුත් ඉතා සරල බසින් විස්තර කරමින් පවත්වන්නට යෙදුන ධර්ම දේශනා තුනකි. මෙහි දැක්වෙන අරුත් දැන ඉගෙනගෙන එම උතුම් සූත්‍ර සජ්ඣායනා කරන ඔබට සැබැවින් ම එහි සදහන් සැබෑ බසින් සෙත සැලසෙනු නොඅනුමානය. ග්‍රන්ථාවසානයේ ඒ උතුම් දේශනා පාළියෙන් හා සිංහලෙන් ඔබට තිළිණ වී තිබේ.",
-    "rating": 5,
-    "stars": 5,
-    "hasMovie": false,
-    "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/21"
+   "title": "සැබෑ බසින් මෙම සෙත සැලසේවා",
+   "author": "පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ",
+   "pages": 154,
+   "category": ["Religion","සිංහල"],
+   "image": "https://tse1.explicit.bing.net/th/id/OIP.oMr3gphyubc6184_36crdAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
+   "description": "ලක්වාසී බෞද්ධ බොහෝ දෙනා තුන් සූත්‍රය කටපාඩමින් දනිති. ආශිර්වාද පතා සජ්ඣායනය ද කරති. නමුත් එම උතුම් මහා මංගල සූත්‍රය, රතන සූත්‍රය, කරණීය මෙත්ත සූත්‍රය යන දේශනාවන්වලින් ඉස්මතු වන පරම ගම්භීර වූ අරුත් බොහෝ දෙනා නොදනිති. ඒ නිසා ම එමගින් උපදවාගත හැකි සැබෑම පිළිසරණ සලසා ගැනීමේ අවස්ථාව බොහෝ දෙනාට අහිමි වී තිබේ. මෙම සදහම් ග්‍රන්ථය තුළ අන්තර්ගත වී තිබෙන්නේ එම උතුම් දේශනාවන්ගේ අරුත් ඉතා සරල බසින් විස්තර කරමින් පවත්වන්නට යෙදුන ධර්ම දේශනා තුනකි. මෙහි දැක්වෙන අරුත් දැන ඉගෙනගෙන එම උතුම් සූත්‍ර සජ්ඣායනා කරන ඔබට සැබැවින් ම එහි සදහන් සැබෑ බසින් සෙත සැලසෙනු නොඅනුමානය. ග්‍රන්ථාවසානයේ ඒ උතුම් දේශනා පාළියෙන් හා සිංහලෙන් ඔබට තිළිණ වී තිබේ.",
+   "rating": 5,
+   "stars": 5,
+   "hasMovie": false,
+   "hasPdf":true,
+   "telegramMessageId": 21
   },
   {
     "title": "සසරක රහස",
@@ -615,7 +621,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/23"
+    "telegramMessageId": 23
   },
   {
     "title": "සිත සනසන අමාදහම්",
@@ -1220,5 +1226,241 @@
     "hasMovie": false,
     "hasPdf": true,
     "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/112"
+  },
+  {
+    "title": "ගිරග සසල විය",
+    "author": "දර්ශනා ශම්මි විජේතිලක",
+    "pages": 136,
+    "category": ["Young Adult","සිංහල"],
+    "image": "https://www.readbooks.lk/public/uploads/all/EByOUKPqxu1kUqLKHWfVjIP9fFShWqt7xSALTqX1.gif",
+    "description": "කිසිදු අරමුණකින් තොරව, ජෙරාඩ් සූරියවංශ නිදන කාමරයේ ජනේලයට පෙනෙන, පහළ උද්‍යානයේ ඇති පොකුණ මැද අඹා ඇති කිරිගරුඬ ගැහැනු රුව දෙස බලා සිටින්නට විය. කලුවරේ එම රුව සුදු පැහැයට පෙනෙන්නේ සුදු ඇඳගත් ගැහැනිය ගෙවත්තේ ඉන්නා සේය. රැයේ නිහඬ බව සමඟ පරිසරයට ගුප්ත බවක් එක් වී ඇත. ඒ නිහඬ ගුප්ත බව ජෙරාඩ් සූරියවංශගේ සිතට සෙමින් සෙමින් කෝපයක් එකතු කරලීය.",
+    "rating": 4.2,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/113"
+  },
+  {
+    "title": "A Mind of Her Own",
+    "author": "Danielle Steel",
+    "pages": 272,
+    "category": ["Fiction"],
+    "image": "https://m.media-amazon.com/images/I/81CAYDe3McL._SY466_.jpg",
+    "description": "Alexandra Bouvier is born in Paris in 1900, at the dawn of a new century. From an early age, she is encouraged to think for herself by her enlightened family: her father, a French doctor; her mother, an American nurse; and her maternal grandfather a highly regarded newspaperman back in the Midwest.",
+    "rating": 4.6,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/114"
+  },
+  {
+    "title": "පාට පිරුවට #01",
+    "author": "සුනෙත් අනුරාධ කොග්ගලහේවා",
+    "pages": 0,
+    "category": ["Romance","සිංහල"],
+    "image": "https://sinhalaebooks.com/wp-content/uploads/2019/01/pata-piruwata.jpg",
+    "description": "අවිස්සාවේල්ල කොළඹ මාර්ගය පාළුවට ගොස් ඇත. ඉඳ හිට හමුවන වාහන දෙක තුනද පොලිස් හෝ හමුදා වාහනය. දහවල පැවති මහ මැතිවරණයේ ප්‍රතිඵල නිකුත් වෙමින් ඇත්තේ දැන්ය. මාර්ගය පාළුවට ගොස් ඇතත් කිසිවෙක් තවම නින්දට ගොස් නැතැයි හර්ෂණ සිතා ගත්තේ මග දෙපස නිවෙස්වල තවමත් දැල්වෙන විදුලි පහන් නිසාය. ඔවුන් ඡන්ද ප්‍රතිඵල නරඹනවා විය යුතුය. තවමත් නිකුත් වී ඇත්තේ ආසන කීපයක ප්‍රතිඵල පමණක් වුවද සමස්ත ප්‍රතිඵලය කෙසේ ද යන්න හර්ෂණ අබේසූරිය මේ වන විටත් දැන සිටියේය. වසර දාහතක් පුරා බලයේ සිටි රජය බිඳ වැටෙමින් විපක්ෂය විශිෂ්ඨ ජයග්‍රහනයකට මුල පුරමින් තිබුණි. හර්ෂණ අබේසූරිය ලොවටම රහසින් මේ සැඟව යන්නට යත්ත දරන්නේද එහෙයිනි.",
+    "rating": 4.3,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/116"
+  },
+  {
+    "title": "පාට පිරුවට #02",
+    "author": "සුනෙත් අනුරාධ කොග්ගලහේවා",
+    "pages": 0,
+    "category": ["Romance","සිංහල"],
+    "image": "https://sinhalaebooks.com/wp-content/uploads/2019/01/pata-piruwata.jpg",
+    "description": "මහේෂ් අබේසුරිය කියන ඇමති ගැන මිනිස්සු ගොඩක් දේවල් කියනවා....සමහරු හොඳ...සමහරු නරක.... මහේෂ් අබේසුරිය ඇමති හොඳද නරකද කියන්න මම දන්නෙ නෑ.......මම කවදාවත් එයාගේ දේශපාලන වැඩ වලට සම්බන්ධ වෙලා නෑ....ඒත් මහේෂ් අබේසුරිය කියන හර්ෂණගේ තාත්තා හොඳ තාත්තා කෙනෙක් ...හොඳ ස්වාමි පුරුෂයෙක්....ගෙදර දොරෙන් ඇතුලට ආවට පස්සේ එයා අපේ පුංචි පවුලේ තාත්තා...අපේ ලෝකය අපේ පවුල.......එළියෙදි කොහොම වුනත් ඒ ලෝකෙ ඇතුලෙදි එයා හොඳ තාත්තෙක්, හර්ෂණ හොඳ පුතෙක්....ඒ නිසා මම ඒ ලෝකෙන් එළියට යන්න කවදාවත් හිතලා නැහැ වගේම ඒ ලෝකෙන් බාහිර දේ ගැන මම හොයන්නෙත් නැහැ..... අවුරුදු තිහක් මම ජීවත් වුණේ ඒ විදියටයි දුව......අපේ පවුල අදත් මේ විදියට තියෙන්නෙ ඒ නිසා....",
+    "rating": 4.2,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/120"
+  },
+  {
+    "title": "බදුල්ල බලා",
+    "author": "රවිඳු නිලංග ප්‍රියදර්ශන",
+    "pages": 0,
+    "category": ["Romance","සිංහල"],
+    "image": "https://www.honwix.com/uploads/book/cover/4ba59463d2d3586e0003e4c85f96ad35c6eb195dd2482301beda0a71365a97e1.webp",
+    "description": "කුඩා පොද වැස්සකට පසු රතු පැහැති මිට්සුබිෂි රථය වැව රවුමේ විත් තහඩු දිරා තිබුණු කඩ පේලියක් අසල නතර කළෙමි.කඩයේ හුන් කාන්තාවට මදහසක් පා ලී පුටුවකට බර දී හිද ගත්තෙමි. කඩ කාමරයේ ඇතුළතින් රූපවාහිනියේ විද්‍යාව පාඩමක් විකාශය වෙමින් තිබිණි. කඩයේ හුන් කාන්තාව පිටතට පැමිණ මා දෙස බලා වික්ෂිප්ත වූවාය.මේ...මේ මහත්තයා ද විද්‍යාව උගන්වන මලිත් කුසුම් සිරි කියන්නෙ, යි ඇසුවේ මගෙන් නිශ්චිත පිළිතුරක් බලාපොරොත්තුවෙනි.",
+    "rating": 4.1,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/118"
+  },
+  {
+    "title": "ආකාස්මික",
+    "author": "ගිම්හානි වාසනා",
+    "pages": 163,
+    "category": ["Romance","සිංහල"],
+    "image": "https://html.scribdassets.com/92axw3g6f4cdvk3a/images/1-27e0ed6499.jpg",
+    "description": "Pending",
+    "rating": 4.4,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/119"
+  },
+  {
+    "title": "ශාපලත් බොනික්කාගේ වියරුව",
+    "author": "දිනුක හිරුෂාන්",
+    "pages": 0,
+    "category": ["සිංහල"],
+    "image": "https://tse4.mm.bing.net/th/id/OIP.HQXlNbsBOeqEPnGH6d-L-AHaK9?w=800&h=1184&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "description": "Pending",
+    "rating": 4.4,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/121"
+  },
+  {
+    "title": "ශාපලත් බොනික්කාගේ වියරුව #01",
+    "author": "දිනුක හිරුෂාන්",
+    "pages": 0,
+    "category": ["සිංහල"],
+    "image": "https://tse4.mm.bing.net/th/id/OIP.HQXlNbsBOeqEPnGH6d-L-AHaK9?w=800&h=1184&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "description": "Pending",
+    "rating": 4.4,
+    "stars": 5,
+    "hasMovie": true,
+    "hasPdf": true,
+    "movieLink": "https://ridomovies.tv/movies/bride-of-chucky-watch-online-1998",
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/119"
+  },
+  {
+    "title": "ශාපලත් බොනික්කාගේ වියරුව #02",
+    "author": "දිනුක හිරුෂාන්",
+    "pages": 0,
+    "category": ["සිංහල"],
+    "image": "https://tse4.mm.bing.net/th/id/OIP.HQXlNbsBOeqEPnGH6d-L-AHaK9?w=800&h=1184&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "description": "Pending",
+    "rating": 4.3,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/123"
+  },
+  {
+    "title": "ට්වින්ක්ලින්කා",
+    "author": "ජානකී සූරියආරච්චි",
+    "pages": 36,
+    "category": ["Children","සිංහල"],
+    "image": "https://www.bookfair.lk/media/image/37848/0037848.jpg?size=600",
+    "description": "Pending",
+    "rating": 4.6,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/124"
+  },
+  {
+    "title": "හෙරලිය",
+    "author": "සිබිල් වෙත්තසිංහ",
+    "pages": 0,
+    "category": ["Children","සිංහල"],
+    "image": "https://oleerobooks.com/wp-content/uploads/2022/10/IMG_0053.jpg",
+    "description": "Pending",
+    "rating": 4.5,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/125"
+  },
+  {
+    "title": "දුවන රැවුල",
+    "author": "සිබිල් වෙත්තසිංහ",
+    "pages": 0,
+    "category": ["Children","සිංහල"],
+    "image": "https://adithbooks.com/wp-content/uploads/2023/03/duwana-rawula-sybil-wettasinghe.jpg",
+    "description": "ඉස්සර කලේ සීයලා රැවුල කපාගත්තේ කොහොමද? ඒ ගැන හිතලා තිබුණද? සිබිල් නැන්දා නම් ඒ ගැන හිතලා හරිම ලස්සන අමුතුම විදිහේ කතාවක් ලියුවා ‘දුවන රැවුල’ කියලා. පොතේ පින්තූරත් කතාවට දෙවැනි නෑ!",
+    "rating": 4.7,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/126"
+  },
+  {
+    "title": "පිදුරු පාල",
+    "author": "සිබිල් වෙත්තසිංහ",
+    "pages": 18,
+    "category": ["Children","සිංහල"],
+    "image": "https://imgs.pothpancha.lk/uploads/2023/08/101454-piduru-pala-by-sybil-wettasinghe-front.webp/detail",
+    "description": "පිදුරු පාල කියන්නේ පොඩි අප්පු අයියගේ එළවලු කොරටුවේ මැද හිටපු පඹරාල. එයා ලණු වලින් කණුවකට ගැට ගහලා හිටියේ නැති නම් එයාට ඇවිදින්න පුළුවන් කියලයි එයා හිතන් හිටියේ. කකුල් දෙකක් තියෙන කවුරුත් ඇවිදිනවා නම් ඇයි මට බැරි කියලයි එයා හිතුවේ. ඉතින් දවසක් එයා යාලුවෙක්ගෙ උදව්වෙන් ලණු බැමි ලිහා ගන්නවා. එත් එයා හිතපු විදියට ඇවිදින්න නම් පුළුවන් වුණේ නෑ.",
+    "rating": 4.8,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/127"
+  },
+  {
+    "title": "මහප්පා",
+    "author": "සිබිල් වෙත්තසිංහ",
+    "pages": 10,
+    "category": ["Children","සිංහල"],
+    "image": "https://imgs.pothpancha.lk/uploads/2023/08/101449-mahappa-by-sybil-wettasinghe-front.webp/detail",
+    "description": "දුක දුරු බදාදා හඳ නොබලන් සෙනසුරාදා. මහම්මා කීවා. මේ නිසා මහප්පා බිම බලාගෙනයි පාර දිගේ කඩේට ගියේ. මහප්පාට හඳ නොබලාම ආපහු එන්න පුළුවන් වෙයිද කියලා බලන්නකෝ.",
+    "rating": 4.6,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/129"
+  },
+  {
+    "title": "සපත්තුව",
+    "author": "සිබිල් වෙත්තසිංහ",
+    "pages": 8,
+    "category": ["Children","සිංහල"],
+    "image": "https://imgs.pothpancha.lk/uploads/2023/08/101408-sapaththuwa-by-sybil-wettasinghe-front.webp/detail",
+    "description": "ඇයි සුපුන් සපත්තු නැතුව ඉස්කෝලේ ගියේ? මේ කතාව කියවලා ඔයාලත් සතුන්ට ආදරේ වෙන්න දුවේ පුතේ.",
+    "rating": 4.6,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/130"
+  },
+  {
+    "title": "මන්තර පොත",
+    "author": "පවිත්‍රා සමරසේකර",
+    "pages": 0,
+    "category": ["සිංහල"],
+    "image": "https://www.mygodpictures.com/wp-content/uploads/2014/11/Shree-Vyasa-Ji.jpg",
+    "description": "Pending",
+    "rating": 4.0,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/131"
+  },
+  {
+    "title": "දෙවියන්ගේ අඩවිය",
+    "author": "අනුල ද සිල්වා",
+    "pages": 291,
+    "category": ["සිංහල"],
+    "image": "https://www.sankhabooks.lk/image/cache/catalog/Sooriya%20Publishers/sooriya/Scan%20780-568x568.jpg",
+    "description": "ඉරාන ජාතික වෛද්‍යවරයකු සමග විවාහ වන ඇමෙරිකානු ගැහැනියක් සිය සැමියා හා දියනිය සමග නිවාඩුවකට ‌ටෙහෙරානයට පැමිනෙයි.එහි දී නොසිතු ලෙස තම සැමියාගේ වද හිංසනයන්ට ලක්වන ඇය හා දියණිය ආපසු ඇමෙරිකාවට යාමට රහසේ වෙහෙසෙයි.Not Without My Daughter යනුවෙන් ලියවුනේ බෙට් මහමුදී නම් ඒ් දිරිය ගැහැනියගේ සත්‍ය කතාවයි.",
+    "rating": 4.2,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "movieLink":"https://www.dailymotion.com/video/x8h2s55",
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/132"
+  },
+   {
+    "title": "මිරිගුව",
+    "author": "B.G.P ධර්මසේන",
+    "pages": 0,
+    "category": ["සිංහල"],
+    "image": "https://sinhalaebooks.com/wp-content/uploads/2022/06/miriguwa.png",
+    "description": "Pending",
+    "rating": 4.1,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/133"
   }
 ]

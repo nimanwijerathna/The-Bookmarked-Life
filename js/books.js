@@ -3,7 +3,7 @@
 // ====================
 let allBooks = [];
 const PAGE_SIZE = 12; // Number of books per page
-const BOT_USERNAME = "TheBookmarkedLifeBot"; // Replace with your bot's username
+const BOT_USERNAME = "TheBookmarkedLifeBot"; 
 
 // ====================
 // Function: Request PDF Access via Telegram Bot

@@ -1813,7 +1813,7 @@ img.post-image {
   background-image: url("https://variety.com/wp-content/uploads/2022/08/The_Next_365_Days_00_09_58_12_RT.jpg");
 }
 .slide-vd {
-  background-image: url("https://th.bing.com/th/id/R.3f2168c3dd7a31bf994268e980672450?rik=kXZ6VMfMJJvnTQ&riu=http%3a%2f%2fwww.heyuguys.com%2fimages%2f2010%2f06%2fDiary-of-a-Wimpy-Kid.jpg&ehk=PjMHQCjVma0xrk2hCDvceCm%2fFgOiWCurGtak36Xw5Ko%3d&risl=&pid=ImgRaw&r=0");
+  background-image: url("https://i0.wp.com/www.heyuguys.com/images/2010/06/Diary-of-a-Wimpy-Kid-2.jpg?ACssl=1");
 }
 
 .main-slider .slider-item {
@@ -2128,10 +2128,6 @@ span.prev-price {
 
 @media screen and (max-width: 980px) {
 
-  /*#subscribe .grid {
-      flex-wrap: wrap;
-      justify-content: center;
-  }*/
   #subscribe .section-title {
     width: 100%;
     margin: 0 auto 50px;
@@ -2161,17 +2157,6 @@ span.prev-price {
   }
 
 }
-
-/*
-@media screen and (max-width: 780px) {
-  #subscribe form#form {
-      width: 90%;
-  }
-  #subscribe .subscribe-content {
-      width: 90%;
-  }
-}*/
-
 
 /*----- Latest Blog Section
 --------------------------------------------------------------*/
@@ -2237,13 +2222,6 @@ span.prev-price {
   z-index: 0;
 }
 
-/*#download-app .container {
-    max-width: 1040px;
-}*/
-/*#download-app figure {
-    width: 40%;
-    z-index: 0;
-}*/
 #download-app .app-info {
   padding-top: 100px;
   margin-left: 50px;
