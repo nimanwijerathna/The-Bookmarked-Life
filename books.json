@@ -51,7 +51,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "telegramMessageId": 0
+    "telegramMessageId": 13
   },
   {
     "title": "What have you done",
@@ -64,7 +64,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "telegramMessageId": 0
+    "telegramMessageId": 14
   },
   {
     "title": "I've got my eyes on you",
@@ -426,7 +426,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "telegramMessageId": 71
+  "telegramMessageId": 72
   },
   {
   "title": "මාරක සටන",
@@ -439,7 +439,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "telegramMessageId": 72
+  "telegramMessageId": 73
   },
   {
   "title": "වෙඩි හඬ",
@@ -452,7 +452,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "telegramMessageId": 73
+  "telegramMessageId": 74
   },
   {
   "title": "සුරූපී නළඟන",
@@ -465,7 +465,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "telegramMessageId": 74
+  "telegramMessageId": 75
   },
   {
   "title": "මුහුදු ගිනිඅවිය",
@@ -478,7 +478,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "telegramMessageId": 75
+  "telegramMessageId": 76
   },
   {
   "title": "රන් දෙවඟන සහ තවත් ෂර්ලොක් හොම්ස් කථා",
@@ -491,7 +491,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "telegramMessageId": 76
+  "telegramMessageId": 77
   },
   {
   "title": "ඝාතකයා නිදැල්ලේ",
@@ -504,7 +504,8 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "telegramMessageId": 77
+  "telegramMessageId": 78,
+  "isUpcoming": true
   },
   {
   "title": "මැණික් කොල්ලය සහ තවත් ෂර්ලොක් හෝම්ස් කථා",
@@ -517,7 +518,7 @@
   "stars": 5,
   "hasMovie": false,
   "hasPdf": true,
-  "telegramMessageId": 78
+  "telegramMessageId": 79
   },
   {
   "title": "කළු ව්‍යාඝ්‍රයා",
@@ -634,7 +635,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/24"
+    "telegramMessageId": 24
   },
   {
     "title": "මමත් සිත සමාහිත කරමි බුදු සමිඳුනේ",
@@ -647,7 +648,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/25"
+    "telegramMessageId": 25
   },
   {
     "title": "සොදුරු හුදෙකලාව",
@@ -660,7 +661,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/26"
+    "telegramMessageId": 26
   },
   {
     "title": "බුද්ධියේ හිරු කිරණ",
@@ -673,7 +674,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/27"
+    "telegramMessageId": 27
   },
   {
     "title": "පින හා අවබෝධය",
@@ -686,7 +687,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/28"
+    "telegramMessageId": 28
   },
   {
     "title": "නිර්මාංශ ප්‍රශ්නය",
@@ -699,7 +700,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/29"
+    "telegramMessageId": 29
   },
   {
     "title": "නිවන්නට භව ගිමන් දෙසූ සදහම් නිවන්",
@@ -712,7 +713,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/30"
+    "telegramMessageId": 30
   },  
   {
     "title": "ගෞතම සසුනේ පිහිට ලබන්නට",
@@ -725,7 +726,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/31"
+    "telegramMessageId": 31
   },
   {
     "title": "ආදරණීය වධකයා",
@@ -738,7 +739,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/32"
+    "telegramMessageId": 32
   },
   {
     "title": "අසිරිමත් සම්බුදු නුවණ",
@@ -751,7 +752,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/33"
+    "telegramMessageId": 33
   },
   {
     "title": "ජරා මරණ දුකින් මිදෙමු",
@@ -777,7 +778,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/19"
+    "telegramMessageId": 19
   },
   {
     "title": "Taste Chocolate",
@@ -803,7 +804,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/36"
+    "telegramMessageId": 36
   },
   {
     "title": "Barista Recipes",
@@ -816,7 +817,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/37"
+    "telegramMessageId": 37
   },
   {
     "title": "Milktea Module",
@@ -829,7 +830,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/38"
+    "telegramMessageId": 38
   },
   {
     "title": "Pasta Cookbook",
@@ -842,7 +843,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/39"
+    "telegramMessageId": 39
   },
   {
     "title": "18 Classic Italian dishes",
@@ -855,7 +856,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/40"
+    "telegramMessageId": 40
   },
   {
     "title": "Pre & Post Workout Meals",
@@ -868,7 +869,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf":true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/41"
+    "telegramMessageId": 41
   },
   {
     "title": "A Clean Plate, 21-Day Transformation Meal Prep Guide and Recipe E-Book",
@@ -881,7 +882,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/42"
+    "telegramMessageId": 42
   },
   {
     "title": "30 Healthy Log It Now Recipes",
@@ -894,7 +895,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/43"
+    "telegramMessageId": 43
   },
   {
     "title": "Cycling Fitness Plan",
@@ -907,10 +908,10 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/44"
+    "telegramMessageId": 44
   },
   {
-    "title": "Rich dad poor dad",
+    "title": "Rich Dad Poor Dad",
     "author": "Robert .T. Kiyosaki",
     "pages": 336,
     "category": "Financial",
@@ -920,7 +921,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/86"
+    "telegramMessageId": 86
   },
   {
     "title": "365 Days",
@@ -934,7 +935,7 @@
     "hasMovie": true,
     "movieLink": "https://ridomovies.tv/movies/365-days-watch-online-2020-rd4",
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/87",
+    "telegramMessageId": 87,
     "isAdult": true
   },
   {
@@ -949,7 +950,7 @@
     "hasMovie": true,
     "movieLink": "https://ridomovies.tv/movies/diary-of-a-wimpy-kid-watch-online-2010-rd2",
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/88"
+    "telegramMessageId": 88
   },
   {
     "title": "Diary of a wimpy kid Book #2",
@@ -963,7 +964,7 @@
     "hasMovie": true,
     "movieLink": "https://ridomovies.tv/movies/diary-of-a-wimpy-kid-rodrick-rules-watch-online-2011-rd2-1qR",
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/89"
+    "telegramMessageId": 89
   },
   {
     "title": "Diary of a wimpy kid the last straw Book #3",
@@ -976,7 +977,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/90"
+    "telegramMessageId": 90
   },
   {
     "title": "Diary of a wimpy kid Dog days Book #4",
@@ -990,7 +991,7 @@
     "hasMovie": true,
     "movieLink": "https://ridomovies.tv/movies/diary-of-a-wimpy-kid-dog-days-watch-online-2012-rd4",
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/91"
+    "telegramMessageId": 91
   },
   {
     "title": "Diary of a wimpy kid The ugly truth Book #5",
@@ -1003,7 +1004,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/92"
+    "telegramMessageId": 92
   },
   {
     "title": "Diary of a wimpy kid cabin fever Book #6",
@@ -1016,7 +1017,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/95"
+    "telegramMessageId": 95
   },
   {
     "title": "Diary of a wimpy kid the third weel Book #7",
@@ -1029,7 +1030,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/97"
+    "telegramMessageId": 97
   },
   {
     "title": "Diary of a wimpy kid Hard Luck Book #8",
@@ -1042,7 +1043,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/98"
+    "telegramMessageId": 98
   },
   {
     "title": "Diary of a wimpy kid The Long haul Book #9",
@@ -1056,7 +1057,7 @@
     "hasMovie": true,
     "movieLink": "https://archive.org/details/diary-of-a-wimpy-kid-the-long-haul-2017",
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/99"
+    "telegramMessageId": 99
   },
   {
     "title": "Diary of a wimpy kid Old school Book #10",
@@ -1069,7 +1070,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/100"
+    "telegramMessageId": 100
   },
   {
     "title": "Diary of a wimpy kid Double down Book #11",
@@ -1082,7 +1083,7 @@
     "stars": 4.7,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/101"
+    "telegramMessageId": 101
   },
   {
     "title": "Diary of a wimpy kid The getaway Book #12",
@@ -1095,7 +1096,7 @@
     "stars": 4.7,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/102"
+    "telegramMessageId": 102
   },
   {
     "title": "Diary of a wimpy kid The meltdown Book #13",
@@ -1108,7 +1109,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/103"
+    "telegramMessageId": 103
   },
   {
     "title": "Diary of a wimpy kid wrecking ball Book #14",
@@ -1121,7 +1122,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/104"
+    "telegramMessageId": 104
   },
   {
     "title": "Diary of a wimpy kid The deep end Book #15",
@@ -1134,7 +1135,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/105"
+    "telegramMessageId": 105
   },
   {
     "title": "Diary of a wimpy kid Big shot Book #16",
@@ -1147,7 +1148,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/106"
+    "telegramMessageId": 106
   },
   {
     "title": "Diary of a wimpy kid Diper Overlord Book #17",
@@ -1160,7 +1161,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/107"
+    "telegramMessageId": 107
   },
   {
     "title": "Diary of a wimpy kid No brainer Book #18",
@@ -1173,7 +1174,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/108"
+    "telegramMessageId": 108
   },
   {
     "title": "Diary of a wimpy kid Hot mess Book #19",
@@ -1186,7 +1187,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/109"
+    "telegramMessageId": 109
   },
   {
     "isUpcoming": true,
@@ -1199,7 +1200,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": false,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/110"
+    "telegramMessageId": 110
   },
   {
     "title": "බෙරගල කන්දේ නිධානය #1",
@@ -1212,7 +1213,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/111"
+    "telegramMessageId": 111
   },
   {
     "title": "බෙරගල කන්දේ නිධානය #2",
@@ -1225,7 +1226,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/112"
+    "telegramMessageId": 112
   },
   {
     "title": "ගිරග සසල විය",
@@ -1238,7 +1239,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/113"
+    "telegramMessageId": 113
   },
   {
     "title": "A Mind of Her Own",
@@ -1251,7 +1252,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/114"
+    "telegramMessageId": 114
   },
   {
     "title": "පාට පිරුවට #01",
@@ -1264,7 +1265,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/116"
+    "telegramMessageId": 116
   },
   {
     "title": "පාට පිරුවට #02",
@@ -1277,7 +1278,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/120"
+    "telegramMessageId": 120
   },
   {
     "title": "බදුල්ල බලා",
@@ -1290,7 +1291,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/118"
+    "telegramMessageId": 118
   },
   {
     "title": "ආකාස්මික",
@@ -1303,7 +1304,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/119"
+    "telegramMessageId": 119
   },
   {
     "title": "ශාපලත් බොනික්කාගේ වියරුව",
@@ -1316,7 +1317,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/121"
+    "telegramMessageId": 121
   },
   {
     "title": "ශාපලත් බොනික්කාගේ වියරුව #01",
@@ -1330,7 +1331,7 @@
     "hasMovie": true,
     "hasPdf": true,
     "movieLink": "https://ridomovies.tv/movies/bride-of-chucky-watch-online-1998",
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/119"
+    "telegramMessageId": 119
   },
   {
     "title": "ශාපලත් බොනික්කාගේ වියරුව #02",
@@ -1343,7 +1344,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/123"
+    "telegramMessageId": 123
   },
   {
     "title": "ට්වින්ක්ලින්කා",
@@ -1356,7 +1357,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/124"
+    "telegramMessageId": 124
   },
   {
     "title": "හෙරලිය",
@@ -1369,7 +1370,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/125"
+    "telegramMessageId": 125
   },
   {
     "title": "දුවන රැවුල",
@@ -1382,7 +1383,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/126"
+    "telegramMessageId": 126
   },
   {
     "title": "පිදුරු පාල",
@@ -1395,7 +1396,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/127"
+    "telegramMessageId": 127
   },
   {
     "title": "මහප්පා",
@@ -1408,7 +1409,7 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/129"
+    "telegramMessageId": 129
   },
   {
     "title": "සපත්තුව",
@@ -1421,20 +1422,20 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/130"
+    "telegramMessageId": 130
   },
   {
     "title": "මන්තර පොත",
     "author": "පවිත්‍රා සමරසේකර",
     "pages": 0,
     "category": ["සිංහල"],
-    "image": "https://www.mygodpictures.com/wp-content/uploads/2014/11/Shree-Vyasa-Ji.jpg",
+    "image": "https://placehold.co/300x450/lightbrown/white?text=No+Image+Available",
     "description": "Pending",
     "rating": 4.0,
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/131"
+    "telegramMessageId": 131
   },
   {
     "title": "දෙවියන්ගේ අඩවිය",
@@ -1448,9 +1449,9 @@
     "hasMovie": false,
     "hasPdf": true,
     "movieLink":"https://www.dailymotion.com/video/x8h2s55",
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/132"
+    "telegramMessageId": 132
   },
-   {
+  {
     "title": "මිරිගුව",
     "author": "B.G.P ධර්මසේන",
     "pages": 0,
@@ -1461,6 +1462,6 @@
     "stars": 5,
     "hasMovie": false,
     "hasPdf": true,
-    "pdfLink": "https://t.me/+6nJOaN6Uglk0N2Jl/133"
+    "telegramMessageId": 133
   }
 ]
