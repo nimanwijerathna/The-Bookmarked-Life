@@ -3,7 +3,9 @@
 // ====================
 let allBooks = [];
 const PAGE_SIZE = 12; // Number of books per page
-const BOT_USERNAME = "TheBookmarkedLifeBot"; 
+const BOT_USERNAME = "TheBookmarkedLifeBot";
+
+let movieHTML = '';
 
 // ====================
 // Function: Request PDF Access via Telegram Bot
@@ -23,18 +25,18 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
   const filteredBooks = category === "All Genre"
     ? books
     : books.filter(book => {
-        if (!book.category) return false;
+      if (!book.category) return false;
 
-        let categories = [];
-        if (typeof book.category === 'string') {
-          categories = book.category.split(',').map(cat => cat.trim().toLowerCase());
-        } else if (Array.isArray(book.category)) {
-          categories = book.category.map(cat => String(cat).toLowerCase());
-        } else {
-          return false;
-        }
-        return categories.includes(category.toLowerCase());
-      });
+      let categories = [];
+      if (typeof book.category === 'string') {
+        categories = book.category.split(',').map(cat => cat.trim().toLowerCase());
+      } else if (Array.isArray(book.category)) {
+        categories = book.category.map(cat => String(cat).toLowerCase());
+      } else {
+        return false;
+      }
+      return categories.includes(category.toLowerCase());
+    });
 
   const totalBooks = filteredBooks.length;
   const totalPages = Math.ceil(totalBooks / PAGE_SIZE);
@@ -63,11 +65,25 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
       : '';
 
     // Movie badge
-    const movieHTML = book.hasMovie && book.movieLink
-      ? `<div class="movie-available mb-2" style="font-size:.8em;">
-           🎬 <a href="${book.movieLink}" target="_blank" rel="noopener" title="Watch the movie">Movie Available</a>
-         </div>`
-      : '';
+    if (book.hasMovie) {
+      if (book.movieLinks?.length) {
+        // Multiple movie links
+        movieHTML = `
+      <div class="movie-available mb-2" style="font-size:.8em;">
+        🎬 ${book.movieLinks.map((link, i) =>
+          `<a href="${link}" target="_blank" rel="noopener" title="Watch the movie ${i + 1}">Movie ${i + 1}</a>`
+        ).join(" | ")}
+      </div>
+    `;
+      } else if (book.movieLink) {
+        // Single movie link
+        movieHTML = `
+      <div class="movie-available mb-2" style="font-size:.8em;">
+        🎬 <a href="${book.movieLink}" target="_blank" rel="noopener" title="Watch the movie">Movie Available</a>
+      </div>
+    `;
+      }
+    }
 
     // PDF badge (Telegram bot gated)
     const pdfHTML = book.hasPdf && book.telegramMessageId !== undefined

@@ -1463,5 +1463,125 @@
     "hasMovie": false,
     "hasPdf": true,
     "telegramMessageId": 133
+  },
+  {
+    "title": "ඇත්ත කියපන් ක්ලියෝපැට්රා",
+    "author": "රොෂාන් ජානක මද්දුමගේ",
+    "pages": 0,
+    "category": ["සිංහල"],
+    "image": "https://bookshop.lk/wp-content/uploads/WhatsApp-Image-2024-09-24-at-12.31.29.jpeg",
+    "description": "රාජ තේජස ලොවට රහසින් වළදැම්මෙ පිරමීඩ මැද්දෙද ආල මන්දාවෙන් අරන් ආ පුසුඹ දැනුනත් හුස්ම වැටුණද ඉනාවක් වෙන්නට තරම් උඹ ඔය හැටිම හිනැහිලා ඉන්න මයුර ඇහි යුග දාර අස්සේ කඳුළු ගල් වෙන අඳුන් ඉලුවද",
+    "rating": 4.1,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 161
+  },
+  {
+    "title": "සරායා",
+    "author": "කුෂාන් හෙට්ටිආරච්චි",
+    "pages": 0,
+    "category": ["සිංහල"],
+    "image": "https://www.honwix.com/uploads/book/cover/40819de7b691597b50b2096f295c8d88ec70ddf89146f075e8dc51d933b478c7.webp",
+   "description": "කතාව එක්තරා විදිහක ආදර කතාවක් කතාව ගොතපු එකක් උනාට මේකෙ ඉන්න චරිත ඇත්ත ජීවිතේ මගෙත් එක්ක හිටපු චරිත. එහෙත් මෙහි එන බොහෝ සිදුවීම් සත්‍ය සිදුවීම්. ඉතින් රස විදල බලන්න මේ කතාවත් ඔයාල ආදරෙන් වැලඳ ගනීවිද කියල. මේ කියවෙන කතාව 1999 සිට 2001 අතර කාලයේ සමාජ පසුබිම ගැන කියවෙන කතාවක් බව කාරුණිකව සලකන්න. ඒ කාලයේ ෆේස් බුක් නියා NOKIA 3310 න් එකක් වත් දකින්න තිබුන කාලයක් නොවේ\nNOKIA 3310 ෆෝන් එකක් වත් තිබුනේ හොදම සල්ලිකාරයෙක් අනේ පමණි තාක්ෂණික උපකරණ සාමාන්‍ය ජනයා අතරට ඇවිත් නොතිබුනේ ඒවායේ මිල අධික නිසාය.",
+    "rating": 4.1,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 162
+  },
+  {
+    "title": "මෝහිනී",
+    "author": "Unknown",
+    "pages": 0,
+    "category": ["සිංහල"],
+    "image": "https://placehold.co/300x450/lightbrown/white?text=No+Image+Available",
+    "description": "Pending",
+    "rating": 4.2,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 163
+  },
+  {
+    "title": "කවිය නුඹ හා තනිව",
+    "author": "ධනංජය නවරත්න",
+    "pages": 0,
+    "category": ["සිංහල"],
+    "image": "https://www.honwix.com/uploads/book/cover/270fdcaab4176efbeddd917b948face1ca6cbe1d8b8efd9a2c1879458ecac6ff.webp",
+    "description": "Pending",
+    "rating": 4.1,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 164
+  },
+  {
+    "title": "It Starts With Us",
+    "author": "Colleen Hoover",
+    "pages": 352,
+    "category": ["සිංහල"],
+    "image": "https://m.media-amazon.com/images/I/51X9euZS4lL._SY445_SX342_.jpg",
+    "description": "his limited hardcover collector’s edition of the #1 New York Times bestselling novel and sequel to Colleen Hoover’s phenomenal It Ends with Us features a beautiful foil cover, designed endpapers, and special recipes from Atlas and Lily’s story. Lily and her ex-husband, Ryle, have just settled into a civil coparenting rhythm when she suddenly bumps into her first love, Atlas, again. After nearly two years separated, she is elated that for once, time is on their side, and she immediately says yes when Atlas asks her on a date. But her excitement is quickly hampered by the knowledge that, though they are no longer married, Ryle is still very much a part of her life—and Atlas Corrigan is the one man he will hate being in his ex-wife and daughter’s life.",
+    "rating": 5,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 165
+  },
+  {
+    "title": "Your Fault",
+    "author": "Mercedes Ron",
+    "pages": 432,
+    "category": ["Romance","Young Adult"],
+    "image": "https://m.media-amazon.com/images/I/51hUhz1BjCL._SY445_SX342_.jpg",
+    "description": "When Noah fell in love with Nick, she knew their relationship would never be easy. They're fire and electricity, and when they're together, every kind of sparks fly. After last summer, Noah thought their passion had grown stronger than their fear, but her life is about to turn upside-down again now that she's starting university. Moving again while maintaining her relationship with Nick will be a difficult hurdle, with their age difference, campus life, dangerous parties, and inner demons stalking them both, reminding them of all they still don't know about each other.",
+    "rating": 4.5,
+    "stars": 5,
+    "hasMovie": true,
+    "hasPdf": true,
+    "telegramMessageId": 166,
+    "movieLink": "https://weflix.codelug.com/movie/your-fault"
+  },
+  {
+    "title": "Our Fault",
+    "author": "Mercedes Ron",
+    "pages": 448,
+    "category": ["Romance","Young Adult"],
+    "image": "https://m.media-amazon.com/images/I/81vSNcvUwAL._SY466_.jpg",
+    "description": "Nick and Noah's rocky relationship is struggling through its worst moment, and it seems that nothing can go back to the way it was before. They will have to surmount a new and frightening set of challenges to finally understand if they are really made for each other or if being apart is their only chance to be happy.",
+    "rating": 4.6,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 167
+  },
+  {
+    "title": "Harry Potter Book Series 01 ,02, 03, 04, 05, 06, 07",
+    "author": "J.K Rowling",
+    "pages": 0,
+    "category": ["Adventure","Fantasy","Young Adult"],
+    "image": "https://tse1.mm.bing.net/th/id/OIP.KYcxWBffu3AFPIXFgTbGagAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "description": "The Harry Potter series follows the journey of a young wizard, his friends, and their fight against dark forces in the magical world of Hogwarts.",
+    "rating": 4.8,
+    "stars": 5,
+    "hasMovie": true,
+    "hasPdf": true,
+    "telegramMessageId": 168,
+    "movieLinks": [
+    "https://ridomovies.tv/movies/harry-potter-and-the-sorcerers-stone-watch-online-2001-rd37", 
+
+    "https://ridomovies.tv/movies/harry-potter-and-the-chamber-of-secrets-watch-online-2002-rd39",
+
+    "https://ridomovies.tv/movies/harry-potter-3-the-prisoner-of-azkaban-watch-online-2004-rd36",
+
+    "https://ridomovies.tv/movies/harry-potter-4-and-the-goblet-of-fire-watch-online-2005-rd26",
+
+    "https://ridomovies.tv/movies/harry-potter-5-and-the-order-of-the-phoenix-rd23",
+
+    "https://ridomovies.tv/movies/harry-potter-6-the-half-blood-prince-watch-online-2009-rd27",
+
+    "https://ridomovies.tv/movies/harry-potter-7-the-deathly-hallows-part-1-watch-online-2010-rd2"
+    ]
   }
 ]
