@@ -237,35 +237,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ====================
-// Newsletter Form
-// ====================
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('form');
-  if (!form) return;
-
-  const emailInput = form.querySelector('input[name="email"]');
-
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const email = emailInput.value.trim();
-
-    if (!validateEmail(email)) {
-      alert('Please enter a valid email address.');
-      emailInput.focus();
-      return;
-    }
-
-    alert(`Thank you for subscribing with: ${email}`);
-    form.reset();
-  });
-
-  function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-  }
-});
-
-// ====================
 // Load Books & Initialize
 // ====================
 document.addEventListener('DOMContentLoaded', () => {
@@ -285,3 +256,8 @@ document.addEventListener('DOMContentLoaded', () => {
       container.innerHTML = '<p class="text-danger">Error loading books. Please try again later.</p>';
     });
 });
+
+if (sessionStorage.getItem('seenWelcome') !== 'true') {
+  document.getElementById('welcomeModal').style.display = 'flex';
+  sessionStorage.setItem('seenWelcome', 'true');
+}
