@@ -3994,7 +3994,7 @@ td:last-child {
   }
 
   #welcomeModal h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #welcomeModal h3 {
@@ -4014,10 +4014,6 @@ td:last-child {
   #welcomeModal .modal-content {
     padding: 15px;
     border-radius: 10px;
-  }
-
-  #welcomeModal h1 {
-    font-size: 16px;
   }
 
   #welcomeModal h3 {
