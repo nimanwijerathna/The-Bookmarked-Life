@@ -4016,6 +4016,10 @@ td:last-child {
     border-radius: 10px;
   }
 
+  #welcomeModal h1 {
+    font-size: 16px;
+  }
+
   #welcomeModal h3 {
     font-size: 16px;
   }
