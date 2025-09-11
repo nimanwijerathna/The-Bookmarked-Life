@@ -2264,7 +2264,7 @@ span.prev-price {
 
 /*----- Footer Section
 --------------------------------------------------------------*/
-footer#footer {
+footer #footer {
   padding-bottom: 80px;
   margin-top: 150px;
   margin-bottom: 60px;
@@ -4031,5 +4031,107 @@ td:last-child {
 
   #welcomeModal .modal-footer {
     font-size: 13px;
+  }
+}
+
+/* About Us Section Styles */
+#about-us {
+  background: var(--light-color);
+  padding: 60px 0;
+}
+
+#about-us .section-header {
+  margin-bottom: 2.5rem;
+}
+
+#about-us .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+#about-us .badge {
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  padding: 0.5em 1.2em;
+  background: var(--accent-color);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(197, 169, 146, 0.12);
+}
+
+#about-us .lead {
+  font-size: 1.25rem;
+  color: var(--body-text-color);
+}
+
+#about-us img.img-fluid {
+  max-width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  margin-bottom: 1rem;
+}
+
+#about-us h3, #about-us h4 {
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+#about-us .list-group-item {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#about-us .btn {
+  font-size: 1.1rem;
+  padding: 0.75em 2em;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(197, 169, 146, 0.10);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  #about-us .section-title {
+    font-size: 2rem;
+  }
+  #about-us .about-content {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-us {
+    padding: 30px 0;
+  }
+  #about-us .section-title {
+    font-size: 1.5rem;
+  }
+  #about-us .about-content {
+    padding: 1rem 0.5rem;
+  }
+  #about-us img.img-fluid {
+    max-width: 90px;
+  }
+  #about-us .lead {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #about-us .section-header {
+    margin-bottom: 1.2rem;
+  }
+  #about-us .about-content {
+    padding: 0.5rem 0.2rem;
+  }
+  #about-us img.img-fluid {
+    max-width: 70px;
+  }
+  #about-us .btn {
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
   }
 }
