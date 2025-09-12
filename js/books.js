@@ -1,3 +1,8 @@
+// Copyright © 2025 The Bookmarked Life. 
+// This website and template are the property of The Bookmarked Life and its author, Niman Wijerathna.
+// Unauthorized copying, distribution, or use of this template is prohibited.
+// For permissions, licensing, or inquiries, contact: infothebookmarkedlife@gmail.com
+
 // ====================
 // Global Variables
 // ====================
@@ -261,3 +266,18 @@ if (sessionStorage.getItem('seenWelcome') !== 'true') {
   document.getElementById('welcomeModal').style.display = 'flex';
   sessionStorage.setItem('seenWelcome', 'true');
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const privacyModalEl = document.getElementById('privacyModal');
+    if (privacyModalEl) {
+        const myModal = new bootstrap.Modal(privacyModalEl);
+
+        const openBtn = document.getElementById('openPrivacyModal');
+        if (openBtn) {
+            openBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                myModal.show();
+            });
+        }
+    }
+});

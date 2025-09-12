@@ -1,3 +1,8 @@
+// Copyright © 2025 The Bookmarked Life. 
+// This website and template are the property of The Bookmarked Life and its author, Niman Wijerathna.
+// Unauthorized copying, distribution, or use of this template is prohibited.
+// For permissions, licensing, or inquiries, contact: infothebookmarkedlife@gmail.com
+
 (function($) {
 
   "use strict";
