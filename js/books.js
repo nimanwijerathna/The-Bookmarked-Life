@@ -267,6 +267,7 @@ if (sessionStorage.getItem('seenWelcome') !== 'true') {
   sessionStorage.setItem('seenWelcome', 'true');
 }
 
+//Privacy Policy Modal
 document.addEventListener('DOMContentLoaded', function () {
     const privacyModalEl = document.getElementById('privacyModal');
     if (privacyModalEl) {
@@ -280,4 +281,67 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
+});
+
+// Terms and Conditions Modal
+document.addEventListener('DOMContentLoaded', function () {
+    const termsModalEl = document.getElementById('termsModal');
+    if (termsModalEl) {
+        const myModal = new bootstrap.Modal(termsModalEl);
+        const openBtn = document.getElementById('openTermsModal');
+        if (openBtn) {
+            openBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                myModal.show();
+            });
+        }
+    }
+});
+
+//Donation Modal
+document.addEventListener('DOMContentLoaded', function () {
+    const donateModalEl = document.getElementById('donationsModal');
+    if (donateModalEl) {
+        const myModal = new bootstrap.Modal(donateModalEl);
+        const openBtn = document.getElementById('openDonationsModal');
+        if (openBtn) {
+            openBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                myModal.show();
+            });
+        }
+    }
+}); 
+
+//Copywrite Modal
+document.addEventListener('DOMContentLoaded', function () {
+    const copywriteModalEl = document.getElementById('dmcaModal');
+    if (copywriteModalEl) {
+        const myModal = new bootstrap.Modal(copywriteModalEl);
+        const openBtn = document.getElementById('openDMCAmodal');
+        if (openBtn) {
+            openBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                myModal.show();
+            });
+        }   
+    }
+});
+
+$('.main-slider').slick({
+  // The 'dots' and 'infinite' options are common, so I've included them as examples.
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+
+  // --- Add this line to remove the arrows ---
+  arrows: false,
+  // ------------------------------------------
+
+  // Other autoplay options
+  autoplay: true,
+  autoplaySpeed: 4500,
+  pauseOnHover: true
 });

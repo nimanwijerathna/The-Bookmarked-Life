@@ -4138,3 +4138,149 @@ td:last-child {
     padding: 0.6em 1.2em;
   }
 }
+
+/* ---- General Slider Section Styles ---- */
+.billboard-slider-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ---- Image Overlay and Content Positioning ---- */
+.main-slider {
+    position: relative;
+}
+
+.main-slider .slider-item {
+    position: relative;
+    min-height: 750px;
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-slider .banner-content {
+    position: relative;
+    z-index: 10;
+    max-width: 600px; /* Constrain content width for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow to make text pop */
+}
+
+/* ---- Typography and Text Styling ---- */
+.banner-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px; /* Subtle kerning for a modern look */
+}
+
+.banner-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, rgba(154, 154, 154, 0.064) 0%, rgb(210, 210, 210) 10%, rgba(221, 221, 221, 0.252));
+    padding: 10px;
+}
+
+/* ---- Responsive Design ---- */
+@media (max-width: 768px) {
+    .main-slider .slider-item {
+        min-height: 400px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+}
+
+/* ---- Add background images for your slides ---- */
+/* Make sure these paths are correct! */
+.slide-vd { background-image: url('https://i0.wp.com/www.heyuguys.com/images/2010/06/Diary-of-a-Wimpy-Kid-2.jpg?ACssl=1'); }
+.slide-sh { background-image: url('https://wallpaperaccess.com/full/3700102.jpg'); }
+.slide-gp { background-image: url('https://s1.1zoom.me/big0/825/Stones_Bokeh_Yoga_Moss_Back_view_Pose_Workout_610899_1280x853.jpg'); }
+.slide-pp { background-image: url('https://variety.com/wp-content/uploads/2022/08/The_Next_365_Days_00_09_58_12_RT.jpg'); }
+.slide-np { background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Happy-small-family-wallpaper-1920x1080.jpg'); }
+.slide-hp { background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/04/Harry-Potter-goblet-of-fire.jpg'); }
+
+/* --- Client Holder Section Styles --- */
+#client-holder {
+    padding: 80px 0; /* Adds spacing above and below the section */
+    background-color: #f8f9fa; /* A light, neutral background */
+}
+
+.inner-content {
+    text-align: center;
+}
+
+/* --- Logo Grid Styling --- */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Adjust spacing between logos */
+}
+
+.grid .col-5 {
+    display: flex; /* Makes the column a flex container */
+    justify-content: center; /* Horizontally centers the image within its column */
+    align-items: center; /* Vertically centers the image */
+}
+
+/* --- Client Holder Section Styles --- */
+        .client-holder {
+            padding: 80px 0; /* Adds spacing above and below the section */
+            background-color: #f8f9fa; /* A light, neutral background */
+        }
+
+        .inner-content {
+            text-align: center;
+        }
+
+        /* --- Logo Grid Styling --- */
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px; /* Adjust spacing between logos */
+        }
+
+        .grid .col-5 {
+            display: flex; /* Makes the column a flex container */
+            justify-content: center; /* Horizontally centers the image within its column */
+            align-items: center; /* Vertically centers the image */
+        }
+
+        /* --- Image and Hover Effects --- */
+        #client-holder img {
+            /* Apply a grayscale filter by default */
+            filter: grayscale(100%);
+            opacity: 0.6; /* Make logos slightly transparent when not hovered */
+            
+            /* Add a smooth transition for all effects */
+            transition: all 0.3s ease-in-out;
+        }
+
+        #client-holder img:hover {
+            /* Remove the grayscale filter on hover to reveal the color */
+            filter: grayscale(0%);
+            opacity: 1; /* Make the logo fully opaque on hover */
+            
+            /* Add a subtle scaling effect to make it pop */
+            transform: scale(1.1);
+        }
+
+        /* --- Optional: Styles for Links --- */
+        #client-holder a {
+            text-decoration: none; /* Removes the default underline from links */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
