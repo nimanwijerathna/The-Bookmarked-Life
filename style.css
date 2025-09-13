@@ -4237,7 +4237,12 @@ td:last-child {
   background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/04/Harry-Potter-goblet-of-fire.jpg');
 }
 
-/* --- Desktop Menu --- */
+
+/* --- Header Layout --- */
+#header {
+    position: relative;
+}
+
 #navbar {
     display: flex;
     justify-content: flex-end;
@@ -4263,15 +4268,15 @@ td:last-child {
     transition: color 0.3s ease;
 }
 
-/* --- Hamburger Icon & Mobile Menu --- */
+/* --- Hamburger Icon (Desktop) --- */
 .hamburger {
-    display: none; /* Hidden on desktop by default */
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
     height: 25px;
     cursor: pointer;
-    z-index: 1001; 
+    z-index: 1001;
 }
 
 .hamburger .bar {
@@ -4281,10 +4286,14 @@ td:last-child {
     transition: all 0.3s ease-in-out;
 }
 
-/* Hide the main menu on mobile screens */
+/* --- Mobile View --- */
 @media (max-width: 991px) {
-    .main-menu.stellarnav {
-        display: none; 
+    .hamburger {
+        display: flex;
+    }
+    
+    .main-menu {
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -4294,22 +4303,18 @@ td:last-child {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         padding: 20px 0;
         z-index: 1000;
+        text-align: center;
     }
     
-    /* Show the hamburger icon on mobile */
-    .hamburger {
+    .main-menu.active {
         display: flex;
     }
-    
+
     .menu-list {
         flex-direction: column;
-        text-align: center;
-        gap: 10px;
     }
-}
 
-@media (max-width: 991px) {
-    .main-menu.stellarnav.active {
-        display: flex;
+    .menu-item {
+        margin: 10px 0;
     }
 }
