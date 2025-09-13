@@ -4310,9 +4310,9 @@ td:last-child {
         display: flex;
     }
 
-    .menu-list {
+    /* .menu-list {
         flex-direction: column;
-    }
+    } */
 
     .menu-item {
         margin: 10px 0;
