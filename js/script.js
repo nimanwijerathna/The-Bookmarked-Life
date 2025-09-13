@@ -141,10 +141,3 @@
 
 
 })(jQuery);
-
-jQuery(document).ready(function($) {
-        $(".stellarnav").stellarNav({
-            theme: "light",
-            breakpoint: 991
-        });
-    });
