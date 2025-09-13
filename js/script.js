@@ -141,3 +141,9 @@
 
 
 })(jQuery);
+
+$(document).ready(function(){
+    jQuery('.stellarnav').stellarNav({
+        theme: 'dark' 
+    });
+});
