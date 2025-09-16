@@ -2183,7 +2183,6 @@ span.prev-price {
 /*----- Latest Blog Section
 --------------------------------------------------------------*/
 
-
 #latest-blog article.column {
   margin-bottom: 60px;
 }
@@ -4237,7 +4236,6 @@ td:last-child {
   background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/04/Harry-Potter-goblet-of-fire.jpg');
 }
 
-
 /* --- Header Layout --- */
 #header {
     position: relative;
@@ -4250,22 +4248,24 @@ td:last-child {
     width: 100%;
 }
 
+.menu-list-1 .active{
+  padding-top: 8px;
+}
+
 .menu-list {
-    display: flex;
+    list-style: none;
+}
+
+.menu-list-1 {
+    display: flex; /* This is the key change for PC view */
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
 }
 
-.menu-item {
-    margin-left: 20px;
-}
-
-.menu-item a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+.menu-list a.active {
+  color: var(--accent-color);
 }
 
 /* --- Hamburger Icon (Desktop) --- */
@@ -4310,9 +4310,9 @@ td:last-child {
         display: flex;
     }
 
-    /* .menu-list {
+    .menu-list-1 {
         flex-direction: column;
-    } */
+    }
 
     .menu-item {
         margin: 10px 0;
