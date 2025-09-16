@@ -629,7 +629,6 @@ input[type="password"],
 textarea,
 select {
   padding: 6px 10px;
-  /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
@@ -1361,11 +1360,6 @@ fieldset[disabled] a.btn {
   border-radius: 0;
 }
 
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
-
-
 /* - Section Padding
 --------------------------------------------------------------*/
 .padding-xsmall {
@@ -1446,82 +1440,6 @@ This is main CSS file that contains custom style rules used in this template
     margin-top: 1em;
     margin-bottom: 1em;
   }
-}
-
-/* - Button
-------------------------------------------------------------- */
-
-button {
-  font-size: 1em;
-  font-weight: 600;
-  border: none;
-  height: 65px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.btn-wrap {
-  text-transform: capitalize;
-}
-
-.btn-wrap a {
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.btn-wrap a:hover {
-  color: #74642F;
-}
-
-.btn-normal {
-  color: #fff;
-}
-
-.btn-accent {
-  color: #111;
-}
-
-.btn-submit {
-  background: #fff;
-  color: #2f2f2f;
-}
-
-.btn-submit:hover {
-  background-color: #c5a992;
-  color: #fff;
-}
-
-.btn-accent-arrow {
-  color: #111;
-}
-
-.btn-wrap i.icon {
-  transition: 0.5s ease-out;
-  font-size: 9px;
-  padding-left: 10px;
-}
-
-.btn-wrap:hover i.icon {
-  padding-left: 20px;
-}
-
-.btn-subscribe {
-  width: 30%;
-  color: #111;
-  background: transparent;
-  margin: 0;
-  height: max-content;
-}
-
-.btn-subscribe span {
-  transition: 0.5s ease-out;
-  padding-right: 5px;
-  opacity: 1;
-}
-
-.btn-subscribe:hover span {
-  padding-right: 10px;
-  opacity: 0.5;
 }
 
 /*--- Image hover Effect
@@ -1608,7 +1526,6 @@ button {
   text-transform: uppercase;
 }
 
-
 @media screen and (max-width: 1366px) {
 
   .section-header .section-title:before,
@@ -1644,27 +1561,6 @@ img.post-image {
   height: 328px;
   object-fit: cover;
 }
-
-/* -- Slick Slide
---------------------------------------------------------------*/
-/* .slick-dots {
-  bottom: -100px;
-}
-
-.slick-dots li {
-  width: 10px;
-  height: 10px;
-  background: #D7D5CC;
-  color: #D7D5CC;
-  border-radius: 50%;
-}
-
-.slick-dots .slick-active {
-  color: #74642F;
-  background: #74642F;
-  border: 1px solid #D7D5CC;
-  outline: 1px solid #D7d5cc;
-} */
 
 /* -- Top Menu Part
 --------------------------------------------------------------*/
@@ -1961,40 +1857,6 @@ img.post-image {
   margin-bottom: 30px;
 }
 
-/*----- Best Selling Section Section
---------------------------------------------------------------*/
-#best-selling {
-  background: #EDEBE4;
-  padding: 120px 0;
-}
-
-#best-selling .products-thumb {
-  margin-right: 60px;
-  box-shadow: 2px 6px 34px 4px rgba(63, 63, 63, 0.08);
-}
-
-#best-selling .product-entry {
-  margin-top: 50px;
-}
-
-#best-selling .product-entry h3.item-title {
-  font-size: 1.8em;
-  font-weight: 100;
-  margin-top: 15px;
-}
-
-#best-selling .product-entry .item-price {
-  font-size: 1.5em;
-  color: #74642F;
-  margin-bottom: 40px;
-}
-
-@media screen and (max-width: 768px) {
-  #best-selling .products-thumb {
-    margin: 0;
-  }
-}
-
 /*----- Popular Books Section
 --------------------------------------------------------------*/
 .tab-content {
@@ -2036,235 +1898,61 @@ img.post-image {
 }
 
 img.books-image {
-  /*height: 290px;*/
   margin-right: 10px;
   margin-bottom: 20px;
   object-fit: cover;
 }
 
-/*----- Quotation Section
---------------------------------------------------------------*/
-#quotation .section-title.divider,
-#quotation .section-title.divider:after {
+/* FAQ Section */
+#faq .faq-container {
+  max-width: 800px;
   margin: 0 auto;
 }
 
-#quotation blockquote {
-  width: 40%;
-  margin: 0 auto;
-}
-
-#quotation q {
-  display: block;
-  font-size: 1.6em;
-  padding: 40px 0;
-}
-
-#quotation .author-name {
-  font-family: "Prata", Georgia, serif;
-  font-size: 1.4em;
-}
-
-@media screen and (max-width: 768px) {
-  #quotation blockquote {
-    width: 80%;
-  }
-}
-
-/*
-@media screen and (max-width: 1320px) {
-  #quotation blockquote {
-      width: 60%;
-  }
-}
-*/
-/*----- Special Offer Section
---------------------------------------------------------------*/
-#special-offer .section-header {
-  background: #EDEBE4;
-  padding: 140px 0 220px;
-  margin-bottom: -141px;
-  z-index: -1;
-}
-
-#special-offer .section-title {
-  width: 70%;
-  margin: 0 auto;
-}
-
-span.prev-price {
-  color: #999;
-  font-size: 0.8em;
-  padding-right: 10px;
-  text-decoration: line-through;
-}
-
-
-/*----- Subscribe Section
---------------------------------------------------------------*/
-#subscribe {
-  background: #EDEBE4;
-  padding: 120px 0;
-}
-
-#subscribe .subscribe-content {
-  margin-left: 15px;
-}
-
-#subscribe .subscribe-content input[type="text"] {
-  background: none;
+#faq .faq-item {
+  margin-bottom: 15px;
   border: none;
-  width: 252px;
-}
-
-#subscribe form#form {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #6F6F6F;
-}
-
-::-webkit-input-placeholder {
-  color: #7A7A7A;
-  /* WebKit browsers */
-}
-
-:-ms-input-placeholder {
-  color: #7A7A7A;
-  /* Internet Explorer 10+ */
-}
-
-
-@media screen and (max-width: 1200px) {
-  #subscribe form#form {
-    width: 90%;
-  }
-
-  #subscribe .subscribe-content input[type="text"] {
-    width: 100%;
-  }
-
-  #subscribe .btn-subscribe {
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 980px) {
-
-  #subscribe .section-title {
-    width: 100%;
-    margin: 0 auto 50px;
-  }
-
-  #subscribe p {
-    width: 100%;
-    text-align: left;
-    margin: 30px auto;
-  }
-
-  #subscribe form#form,
-  #subscribe .subscribe-content {
-    width: 100%;
-  }
-
-  #subscribe form#form {
-    margin: 0 auto;
-  }
-
-  #subscribe .subscribe-content {
-    margin-left: 0;
-  }
-
-  #subscribe {
-    margin-bottom: 90px;
-  }
-
-}
-
-/*----- Latest Blog Section
---------------------------------------------------------------*/
-
-#latest-blog article.column {
-  margin-bottom: 60px;
-}
-
-#latest-blog figure {
-  margin-bottom: 30px;
-}
-
-#latest-blog .meta-date {
-  font-family: "Prata", Georgia, serif;
-  color: #74642F;
-  padding-bottom: 20px;
-}
-
-#latest-blog h3 {
-  font-size: 1.7em;
-  font-weight: 500;
-  margin-top: 0;
-}
-
-#latest-blog .links-element {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #C8C8C8;
-  padding-top: 20px;
-}
-
-#latest-blog .categories {
-  text-transform: uppercase;
-}
-
-.social-links li {
-  padding-right: 20px;
-}
-
-@media screen and (max-width: 999px) {
-  #latest-blog h3 {
-    font-size: 1.4em;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #latest-blog .grid {
-    flex-wrap: wrap;
-  }
-
-  #latest-blog article.column {
-    width: 100%;
-  }
-}
-
-/*----- Contact Section
---------------------------------------------------------------*/
-#download-app {
-  background: #EDEBE4;
-  padding: 120px 0;
   overflow: hidden;
-  z-index: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-#download-app .app-info {
-  padding-top: 100px;
-  margin-left: 50px;
+#faq .faq-question {
+  width: 100%;
+  background-image: linear-gradient(to right, #ffc48c, #939393);
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-#download-app .app-info p {
-  margin-bottom: 50px;
+#faq .faq-question:hover {
+  background: #484848;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 820px) {
-  #download-app .grid {
-    flex-wrap: wrap;
-  }
+#faq .faq-answer {
+  display: none;
+  padding: 15px 20px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 1em;
+  line-height: 1.6;
+}
 
-  #download-app figure {
-    margin: 0 auto;
-  }
+/* Active state */
+#faq .faq-item.active .faq-answer {
+  display: block;
+}
 
-  #download-app .app-info {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 80px;
+/* Responsive */
+@media (max-width: 768px) {
+  #faq .faq-container {
+    width: 100%;
+    padding: 0 10px;
   }
 }
 
@@ -2411,30 +2099,6 @@ footer {
   }
 }
 
-.share-buttons .btn-outline-success:hover {
-  background-color: #25d366;
-  color: white;
-  border-color: #25d366;
-}
-
-.share-buttons .btn-outline-info:hover {
-  background-color: #0088cc;
-  color: white;
-  border-color: #0088cc;
-}
-
-.share-buttons .btn-outline-primary:hover {
-  background-color: #1877f2;
-  color: white;
-  border-color: #1877f2;
-}
-
-.share-buttons .btn-outline-danger:hover {
-  background-color: #C13584;
-  color: white;
-  border-color: #C13584;
-}
-
 /* Base layout: horizontally aligned banner content and image */
 .slider-item {
   display: flex;
@@ -2578,7 +2242,6 @@ footer {
     padding: 0 15px;
   }
 
-  /* Centered title and text for small screens */
   .banner-content h2.banner-title {
     font-size: 2rem;
   }
@@ -2599,7 +2262,6 @@ footer {
     top: 80%;
   }
 
-  /* Adjust arrows for small screens */
   #billboard button.prev.slick-arrow {
     left: 5px;
   }
@@ -2642,7 +2304,6 @@ footer {
 
 /* Banner image fixed size & layout */
 .banner-image {
-  /* max-width and object-fit from removed inline styles */
   max-width: 450px;
   width: 100%;
   object-fit: contain;
@@ -2671,13 +2332,10 @@ footer {
 }
 
 @media (max-width: 991px) {
-
-  /* Responsive banner image max width */
   .banner-image {
     max-width: 100%;
   }
 
-  /* Quote overlay padding smaller on small screens */
   .quote-overlay {
     padding: 1.5rem 2rem;
   }
@@ -2715,20 +2373,6 @@ footer {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Map container fixed height */
-.map-container {
-  height: 250px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.map-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
-
 /* Quote overlay padding and margin from inline */
 .quote-overlay {
   padding: 3rem 4rem;
@@ -2755,37 +2399,6 @@ footer {
     padding: 1rem 1.5rem;
     margin: 0;
   }
-}
-
-/* ==========================================================================
-   Booksaw Main Stylesheet
-   ========================================================================== */
-
-/* =========================
-   1. Root Variables & Theme
-   ========================= */
-:root {
-  --accent-color: #C5A992;
-  --secondary-color: #C5A992;
-  --dark-color: #2f2f2f;
-  --light-color: #F3F2EC;
-  --body-text-color: #757575;
-  --light-text-color: #afafaf;
-  --dark-text-color: #2f2f2f;
-  --body-font: "Poppins", sans-serif;
-  --heading-font: "Poppins", sans-serif;
-  --secondary-font: "Poppins", sans-serif;
-  --bs-primary: #C5A992;
-  --bs-secondary: #C5A992;
-  --bs-black: #111;
-  --bs-light: #F1F1F0;
-  --bs-dark: #212529;
-  --bs-gray: #949494;
-  --bs-gray-dark: #51565b;
-  --bs-body-font-size: 0.9rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.7;
-  --bs-body-color: #333;
 }
 
 @media screen and (max-width: 600px) {
@@ -3707,8 +3320,6 @@ td:last-child {
   margin-bottom: 2rem;
 }
 
-/* Main image (already responsive from img-fluid/w-100) */
-
 .banner-overlay-image {
   position: absolute;
   left: 50%;
@@ -4169,9 +3780,7 @@ td:last-child {
   position: relative;
   z-index: 10;
   max-width: 600px;
-  /* Constrain content width for better readability */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  /* Adds a subtle shadow to make text pop */
 }
 
 /* ---- Typography and Text Styling ---- */
@@ -4180,7 +3789,6 @@ td:last-child {
   font-weight: 700;
   margin-bottom: 20px;
   letter-spacing: -1px;
-  /* Subtle kerning for a modern look */
 }
 
 .banner-content p {
@@ -4206,8 +3814,6 @@ td:last-child {
   }
 }
 
-/* ---- Add background images for your slides ---- */
-/* Make sure these paths are correct! */
 .slide-vd {
   background-image: url('https://i0.wp.com/www.heyuguys.com/images/2010/06/Diary-of-a-Wimpy-Kid-2.jpg?ACssl=1');
 }
