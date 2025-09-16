@@ -2664,11 +2664,8 @@ footer {
   display: block;
 }
 
-/* Quote image container - no inline styles needed as handled by class */
-
 /* Quote overlay and positioning */
 .quote-overlay {
-  /* p-lg-5 p-4 m-1 replaced with padding and margin classes in css */
   padding: 3rem 4rem;
   margin: 0.25rem;
 }
@@ -3723,7 +3720,6 @@ td:last-child {
   z-index: 3;
   background: #fff;
   padding: 6px;
-  /* Animation properties */
   opacity: 0;
   animation: upFadeIn 33s cubic-bezier(0.22, 0.68, 0.57, 1) 0.2s forwards;
 }
@@ -4257,7 +4253,7 @@ td:last-child {
 }
 
 .menu-list-1 {
-    display: flex; /* This is the key change for PC view */
+    display: flex; 
     list-style: none;
     margin: 0;
     padding: 0;

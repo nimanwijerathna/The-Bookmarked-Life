@@ -10,8 +10,6 @@ let allBooks = [];
 const PAGE_SIZE = 12; // Number of books per page
 const BOT_USERNAME = "TheBookmarkedLifeBot";
 
-let movieHTML = '';
-
 // ====================
 // Function: Request PDF Access via Telegram Bot
 // ====================
@@ -59,6 +57,7 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
   let html = '<div class="row">';
 
   booksToShow.forEach((book) => {
+    let movieHTML = '';
     // Adult badge
     const adultHTML = book.isAdult
       ? `<div class="adult-badge position-absolute top-0 start-0 m-2 px-2 py-1">18+</div>`
@@ -329,7 +328,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 $('.main-slider').slick({
-  // The 'dots' and 'infinite' options are common, so I've included them as examples.
   dots: true,
   infinite: true,
   speed: 500,
