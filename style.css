@@ -1923,7 +1923,7 @@ img.books-image {
   outline: none;
   text-align: left;
   padding: 15px 20px;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s ease;
