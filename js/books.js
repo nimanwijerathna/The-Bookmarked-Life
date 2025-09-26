@@ -9,6 +9,7 @@
 let allBooks = [];
 const PAGE_SIZE = 12; // Number of books per page
 const BOT_USERNAME = "TheBookmarkedLifeBot";
+const DEFAULT_IMAGE = "images/logo.png";
 
 // ====================
 // Function: Request PDF Access via Telegram Bot
@@ -105,7 +106,17 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
           <figure class="product-style d-flex justify-content-center align-items-center mb-3 position-relative" style="height:400px;">
             ${adultHTML}
             ${upcomingHTML}
-            <img src="${book.image}" alt="${escapeHtml(book.title)}" class="img-fluid mx-auto d-block">
+${book.image 
+  ? `<div class="skeleton">
+       <img src="${book.image}" 
+            alt="${escapeHtml(book.title)}" 
+            class="img-fluid mx-auto d-block" 
+            style="display:none;"
+            onload="this.style.display='block'; this.parentElement.classList.remove('skeleton');"
+            onerror="this.onerror=null; this.src='${DEFAULT_IMAGE}'; this.style.display='block'; this.parentElement.classList.remove('skeleton');" />
+     </div>`
+  : ""}
+
           </figure>
 
           <figcaption class="flex-grow-1">
@@ -268,63 +279,63 @@ if (sessionStorage.getItem('seenWelcome') !== 'true') {
 
 //Privacy Policy Modal
 document.addEventListener('DOMContentLoaded', function () {
-    const privacyModalEl = document.getElementById('privacyModal');
-    if (privacyModalEl) {
-        const myModal = new bootstrap.Modal(privacyModalEl);
+  const privacyModalEl = document.getElementById('privacyModal');
+  if (privacyModalEl) {
+    const myModal = new bootstrap.Modal(privacyModalEl);
 
-        const openBtn = document.getElementById('openPrivacyModal');
-        if (openBtn) {
-            openBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                myModal.show();
-            });
-        }
+    const openBtn = document.getElementById('openPrivacyModal');
+    if (openBtn) {
+      openBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        myModal.show();
+      });
     }
+  }
 });
 
 // Terms and Conditions Modal
 document.addEventListener('DOMContentLoaded', function () {
-    const termsModalEl = document.getElementById('termsModal');
-    if (termsModalEl) {
-        const myModal = new bootstrap.Modal(termsModalEl);
-        const openBtn = document.getElementById('openTermsModal');
-        if (openBtn) {
-            openBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                myModal.show();
-            });
-        }
+  const termsModalEl = document.getElementById('termsModal');
+  if (termsModalEl) {
+    const myModal = new bootstrap.Modal(termsModalEl);
+    const openBtn = document.getElementById('openTermsModal');
+    if (openBtn) {
+      openBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        myModal.show();
+      });
     }
+  }
 });
 
 //Donation Modal
 document.addEventListener('DOMContentLoaded', function () {
-    const donateModalEl = document.getElementById('donationsModal');
-    if (donateModalEl) {
-        const myModal = new bootstrap.Modal(donateModalEl);
-        const openBtn = document.getElementById('openDonationsModal');
-        if (openBtn) {
-            openBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                myModal.show();
-            });
-        }
+  const donateModalEl = document.getElementById('donationsModal');
+  if (donateModalEl) {
+    const myModal = new bootstrap.Modal(donateModalEl);
+    const openBtn = document.getElementById('openDonationsModal');
+    if (openBtn) {
+      openBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        myModal.show();
+      });
     }
-}); 
+  }
+});
 
 //Copywrite Modal
 document.addEventListener('DOMContentLoaded', function () {
-    const copywriteModalEl = document.getElementById('dmcaModal');
-    if (copywriteModalEl) {
-        const myModal = new bootstrap.Modal(copywriteModalEl);
-        const openBtn = document.getElementById('openDMCAmodal');
-        if (openBtn) {
-            openBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                myModal.show();
-            });
-        }   
+  const copywriteModalEl = document.getElementById('dmcaModal');
+  if (copywriteModalEl) {
+    const myModal = new bootstrap.Modal(copywriteModalEl);
+    const openBtn = document.getElementById('openDMCAmodal');
+    if (openBtn) {
+      openBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        myModal.show();
+      });
     }
+  }
 });
 
 $('.main-slider').slick({
