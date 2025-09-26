@@ -1783,5 +1783,70 @@
     "hasMovie": false,
     "hasPdf": true,
     "telegramMessageId": 190
+  },
+  {
+    "title": "ඕලු 1",
+    "author": "කුමාර කරුණාරත්න",
+    "category": ["සිංහල"],
+    "pages": 163,
+    "image": "https://th.bing.com/th/id/R.876e0116c8d899a256035b161f978eb3?rik=mMkY1nET1o5d4A&pid=ImgRaw&r=0",
+    "description": "'ඕලූ' නම් වූ මේ කතාව තරුණ ගුරුවරයකු සහ යොවුන් ශිෂ්‍යාවක අතර හටගන්නා පිවිතුරු ආධ්‍යාත්මික බැඳීමක් තාරුණ්‍යයේ සුන්දරත්වය හා චමත්කාරය සමග එක් අපූරු ජීවන සුවඳක් බවට පත්වන අයුරු නිරූපණය කරන ප්‍රබන්ධයකි.",
+    "rating": 4.3,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 192
+  },
+  {
+    "title": "ඕලු 2",
+    "author": "කුමාර කරුණාරත්න",
+    "category": ["සිංහල"],
+    "pages": 175,
+    "image": "https://www.dayawansajayakody.com/wp-content/uploads/2020/06/Olu2-1220x1701.jpg",
+    "description": "රාගයෙන් තොර ආදරයක සොදුරු චමත්කාරය සහ පිවිතුරු ජීවත සුවඳ වහනය කෙරෙන මේ ප්‍රබන්ධය ජීවන අරගලයට උරදී සිටින දිරිය දියණියකගේත් පරාර්ථය සිය ජීවන දර්ශනය කරගත් උදාර තරුණයකුගේත් චරිත ඇසුරින් පාඨක සිත්සතන් පහන් සංවේගයෙන් සනසාලමින් රචිත ගද්‍ය කාව්‍යයක් බඳු රසවත් නිර්මාණයකි.",
+    "rating": 4.3,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 193
+  },
+  {
+    "title": "ඕලු 3",
+    "author": "කුමාර කරුණාරත්න",
+    "category": ["සිංහල"],
+    "pages": 192,
+    "image": "https://www.dayawansajayakody.com/wp-content/uploads/2020/06/Olu3.jpg",
+    "description": "'ඕලු' නම් වූ කොටස් පහකින් සමන්විත මේ කතාව තරුණ ගුරුවරයකු සහ යොවුන් ශිෂ්‍යාවක අතර හටගන්නා පිවිතුරු ආධ්‍යාත්මික බැඳීමක් තාරුණ්‍යෙයේ සුන්දරත්වය හා චමත්කාරය සමග එක් ව අපූර්ව ජීවන සුවඳක් බවට පත්වන අයුරු නිරූපණය කරන ප්‍රබන්ධයකි.",
+    "rating": 4.3,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 194
+  },
+  {
+    "title": "ඕලු 4",
+    "author": "කුමාර කරුණාරත්න",
+    "category": ["සිංහල"],
+    "pages": 208,
+    "image": "https://katha.lk/wp-content/uploads/2024/09/s0474-olu-4-kumara-karunarathna.webp",
+    "description": "කාණ්ඩ පහකින් සමන්විත මෙම දීර්ඝ නවකතාවේ තේමාව වන්නේ ආධ්‍යාත්මික ආදරයයි. රාගයෙන් කිළිටි නොවුණ ආදරය ඉතා සුන්දරය, සුවඳය. එය ආනන්දයෙන් සිත් පුරවාලයි. මෙහි එන ප්‍රධාන චරිත දෙක එවන් ආදරයකින් බැඳුණාහු වෙති.",
+    "rating": 4.3,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 195
+  },
+  {
+    "title": "ඕලු 5",
+    "author": "කුමාර කරුණාරත්න",
+    "category": ["සිංහල"],
+    "pages": 151,
+    "image": "https://katha.lk/wp-content/uploads/2024/09/s0475-olu-5-kumara-karunarathna.webp",
+    "description": "මෙය දිරිය දියණියක පිළිබඳ කතාවක් සේ ම බෝසත් ගුණ ඇති යහපත් මිනිසුන් පිළිබඳ කතාවක් ද වෙයි. මෙවන් චරිත හමුවන්නේ සුරංගනා කතාවල පමණකැයි කෙනකු කියන්නට බැරි නැත. එහෙත් දහම් පාසල් යන වියෙහි සිට ම බෝසත් චරිත හදාරණ සමාජයක මෙබඳු චරිත ආගන්තුක වෙතැයි මම නොසිතමි.",
+    "rating": 4.3,
+    "stars": 5,
+    "hasMovie": false,
+    "hasPdf": true,
+    "telegramMessageId": 196
   }
 ]
