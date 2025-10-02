@@ -354,3 +354,34 @@ $('.main-slider').slick({
   autoplaySpeed: 4500,
   pauseOnHover: true
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.authors-slider', {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      centeredSlides: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        // Mobile
+        576: {
+          slidesPerView: 2,
+        },
+        // Tablet
+        768: {
+          slidesPerView: 3,
+        },
+        // Desktop
+        992: {
+          slidesPerView: 4,
+        },
+        // Large desktop
+        1200: {
+          slidesPerView: 5,
+        }
+      }
+    });
+  });

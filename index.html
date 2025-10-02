@@ -40,6 +40,9 @@
 	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css" />
 	<link rel="stylesheet" type="text/css" href="css/vendor.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
@@ -93,7 +96,8 @@
 								<ul class="menu-list-1">
 									<li class="menu-item active"><a href="#home">Home</a></li>
 									<li class="menu-item"><a href="#about-us" class="nav-link">About Us</a></li>
-									<li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
+									<li class="menu-item"><a href="#popular-books" class="nav-link">Books</a></li>
+									<li class="menu-item"><a href="#authors" class="nav-link">Authors</a></li>
 									<li class="menu-item"><a href="#quote" class="nav-link">Quote</a></li>
 									<li class="menu-item"><a href="#faq" class="nav-link">Q & A</a></li>
 								</ul>
@@ -403,19 +407,123 @@
 		</div>
 	</section>
 
-	<section id="subscribe">
+	<section id="authors" class="authors-section py-5 my-2">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-10">
-					<div class="subscribe-banner position-relative mb-4">
-						<!-- Base/banner image -->
-						<img src="https://www.unesco.org/sites/default/files/styles/banner_desktop/public/2024-04/shutterstock_2031737963.jpeg.webp?itok=7LP5T4ub"
-							alt="Bookshelf Banner" class="img-fluid rounded-3 w-100" />
-						<!-- Overlaid image (top center) -->
-						<img src="https://media.istockphoto.com/id/1827941091/vector/world-book-day-wallpaper-with-different-shapes-design-and-typography-banner-international.jpg?s=170667a&w=0&k=20&c=zitdLoOchaVPNOr4ls8gtj0-RtM8u7TqcM2OvOZZyqg="
-							alt="Banner Overlay" class="banner-overlay-image" />
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header align-center mb-4">
+						<div class="title">
+							<span>Famous Writers</span>
+						</div>
+						<h2 class="section-title">Popular Authors</h2>
 					</div>
 				</div>
+			</div>
+
+			<!-- Swiper Container -->
+			<div class="swiper authors-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://bossip.com/wp-content/uploads/sites/28/2019/03/15528280546409.jpg?w=700&strip=all&quality=80"
+								alt="J.K. Rowling" class="author-image mb-3" />
+							<h5 class="author-name mb-1">J.K. Rowling</h5>
+							<p class="author-bio small text-muted">British author, best known for the Harry
+								Potter series.</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://tse4.mm.bing.net/th/id/OIP.DkYTagW63y169NfObip-twHaKj?rs=1&pid=ImgDetMain"
+								alt="Mercedes Ron" class="author-image mb-3" />
+							<h5 class="author-name mb-1">Mercedes Ron</h5>
+							<p class="author-bio small text-muted">Argentinian author, known for her young adult
+								novels.</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://www.granice.pl/sys6/pliki/publikacje/0bc003a9af016836c0950c1faebef481.jpeg"
+								alt="Jess Ryder" class="author-image mb-3" />
+							<h5 class="author-name mb-1">Jess Ryder</h5>
+							<p class="author-bio small text-muted">British author, known for her psychological
+								thrillers.</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://tse1.mm.bing.net/th/id/OIP.1gsX4ljPU_J_w0j-8bxpNAHaLH?rs=1&pid=ImgDetMain"
+								alt="Colleen Hoover" class="author-image mb-3" />
+							<h5 class="author-name mb-1">Colleen Hoover</h5>
+							<p class="author-bio small text-muted">American author, best known for her
+								contemporary romance novels.</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://i.cbc.ca/1.3737756.1472242919!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_940/shari-lapena.jpg"
+								alt="Shari Lapena" class="author-image mb-3" />
+							<h5 class="author-name mb-1">Shari Lapena</h5>
+							<p class="author-bio small text-muted">Canadian author, known for her psychological
+								thrillers.</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://tse2.mm.bing.net/th/id/OIP.iKJS62Itmj2hrUwASD41XAHaLG?rs=1&pid=ImgDetMain"
+								alt="Mary Higgins Clark" class="author-image mb-3" />
+							<h5 class="author-name mb-1">Mary Higgins Clark</h5>
+							<p class="author-bio small text-muted">Queen of suspense, bestselling American
+								author.</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://images.squarespace-cdn.com/content/v1/58d0e1fd20099eeb57de5b91/1493716104607-LGGIOCDTU89K7M1D1H8P/karen_hamilton_profile?format=750w"
+								alt="Karen Hamilton" class="author-image mb-3" />
+							<h5 class="author-name mb-1">Karen Hamilton</h5>
+							<p class="author-bio small text-muted">Author of psychological thrillers.</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://images.gr-assets.com/authors/1312887232p5/4652242.jpg"
+								alt="Chandana Mendis" class="author-image mb-3" />
+							<h5 class="author-name mb-1">Chandana Mendis</h5>
+							<p class="author-bio small text-muted">Sri Lankan author, best known for
+								translations of the Sherlock Holmes series.</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://th.bing.com/th/id/R.f2730e3f8d0b24d059412a62101afcf6?rik=Ts7CFmhnR6f7fA&riu=http%3a%2f%2fwww.buddhameditation.uk%2fwp-content%2fuploads%2f2017%2f11%2f2.jpg&ehk=ISoFxewI0ECpmM%2fJ0GYoCz%2f5GrDdrR7pblat4AfrXII%3d&risl=&pid=ImgRaw&r=0"
+								alt="පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ" class="author-image mb-3" />
+							<h5 class="author-name mb-1">පූජ්‍ය කිරිබත්ගොඩ ඤාණානන්ද ස්වාමීන් වහන්සේ</h5>
+							<p class="author-bio small text-muted">පොල්ගහවෙල මහමෙව්නා භාවනා අසපුවේ නිර්මාතෘ සහ
+								අනුශාසක</p>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="author-card p-3 border rounded shadow-sm text-center h-100">
+							<img src="https://damsayura.lk/wp-content/uploads/2020/06/Nawalapitiye-Ariyawansha-Himi-V2.jpg"
+								alt="පූජ්‍ය නාවලපිටියේ අරියවංශ ස්වාමීන් වහන්සේ" class="author-image mb-3" />
+							<h5 class="author-name mb-1">පූජ්‍ය නාවලපිටියේ අරියවංශ ස්වාමීන් වහන්සේ</h5>
+							<p class="author-bio small text-muted"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
 	</section>
@@ -463,7 +571,8 @@
 						<figcaption
 							class="quote-overlay position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center text-center p-4">
 							<blockquote class="blockquote mb-0">
-								<p class="mb-2 fst-italic">"A room without books is like a body without a soul."</p>
+								<p class="mb-2 fst-italic">"A room without books is like a body without a soul."
+								</p>
 								<footer class="blockquote-footer mt-2 mt-lg-0">
 									<cite title="Source Title">Marcus Tullius Cicero</cite>
 								</footer>
@@ -476,65 +585,78 @@
 	</section>
 
 	<!-- Q&A Section -->
-<section id="faq">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-header align-center">
-          <div class="title">
-            <span>The Bookmarked Life FAQ</span>
-          </div>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-        </div>
-        <p class="text-center mb-4">Here are some common questions about our project and volunteering. Click a
-          question to view the answer.</p>
+	<section id="faq">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-header align-center">
+						<div class="title">
+							<span>The Bookmarked Life FAQ</span>
+						</div>
+						<h2 class="section-title">Frequently Asked Questions</h2>
+					</div>
+					<p class="text-center mb-4">Here are some common questions about our project and
+						volunteering. Click
+						a
+						question to view the answer.</p>
 
-        <div class="faq-container">
-          <div class="faq-item">
-            <button class="faq-question">💡 What is The Bookmarked Life?</button>
-            <div class="faq-answer">
-              <p>It’s a community-driven, free online library built to expand access to books and learning for
-                everyone. Volunteers power the project through contributions in design, coding, outreach, and
-                translation.</p>
-            </div>
-          </div>
+					<div class="faq-container">
+						<div class="faq-item">
+							<button class="faq-question">💡 What is The Bookmarked Life?</button>
+							<div class="faq-answer">
+								<p>It’s a community-driven, free online library built to expand access to books
+									and
+									learning for
+									everyone. Volunteers power the project through contributions in design,
+									coding,
+									outreach, and
+									translation.</p>
+							</div>
+						</div>
 
-          <div class="faq-item">
-            <button class="faq-question">👥 Who can volunteer?</button>
-            <div class="faq-answer">
-              <p>Anyone with a passion for reading, technology, design, or community service! Whether you’re a
-                student, professional, or hobbyist, your skills are welcome.</p>
-            </div>
-          </div>
+						<div class="faq-item">
+							<button class="faq-question">👥 Who can volunteer?</button>
+							<div class="faq-answer">
+								<p>Anyone with a passion for reading, technology, design, or community service!
+									Whether
+									you’re a
+									student, professional, or hobbyist, your skills are welcome.</p>
+							</div>
+						</div>
 
-          <div class="faq-item">
-            <button class="faq-question">🛠 What kind of work can I do?</button>
-            <div class="faq-answer">
-              <p>Volunteers help with tasks like UX design, feature development, content curation, translation,
-                outreach, and more. There’s a role for everyone.</p>
-            </div>
-          </div>
+						<div class="faq-item">
+							<button class="faq-question">🛠 What kind of work can I do?</button>
+							<div class="faq-answer">
+								<p>Volunteers help with tasks like UX design, feature development, content
+									curation,
+									translation,
+									outreach, and more. There’s a role for everyone.</p>
+							</div>
+						</div>
 
-          <div class="faq-item">
-            <button class="faq-question">📜 How do I join?</button>
-            <div class="faq-answer">
-              <p>Just visit our site, read the contributor guidelines, and fill out the volunteer form. Our team
-                will connect you with the right area to contribute.</p>
-            </div>
-          </div>
+						<div class="faq-item">
+							<button class="faq-question">📜 How do I join?</button>
+							<div class="faq-answer">
+								<p>Just visit our site, read the contributor guidelines, and fill out the
+									volunteer
+									form. Our team
+									will connect you with the right area to contribute.</p>
+							</div>
+						</div>
 
-          <div class="faq-item">
-            <button class="faq-question">🔒 Are there rules or policies?</button>
-            <div class="faq-answer">
-              <p>Yes, we have clear guidelines covering content standards, contributor responsibilities, privacy,
-                and resource sharing to ensure a safe and professional environment.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+						<div class="faq-item">
+							<button class="faq-question">🔒 Are there rules or policies?</button>
+							<div class="faq-answer">
+								<p>Yes, we have clear guidelines covering content standards, contributor
+									responsibilities, privacy,
+									and resource sharing to ensure a safe and professional environment.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<footer class="py-3 mt-5" id="footer">
 		<div class="container">
@@ -556,12 +678,15 @@
 					<div class="footer-item">
 						<h5 class="fw-bold mb-3">Quick Links</h5>
 						<ul class="menu-list list-unstyled small">
-							<li class="menu-item mb-2"><a href="#home" class="text-decoration-none">Home</a></li>
-							<li class="menu-item mb-2"><a href="#about-us" class="text-decoration-none">About Us</a>
+							<li class="menu-item mb-2"><a href="#home" class="text-decoration-none">Home</a>
+							</li>
+							<li class="menu-item mb-2"><a href="#about-us" class="text-decoration-none">About
+									Us</a>
 							</li>
 							<li class="menu-item mb-2"><a href="#popular-books" class="text-decoration-none">Popular
 									Books</a></li>
-							<li class="menu-item mb-2"><a href="#quote" class="text-decoration-none">Quote of the
+							<li class="menu-item mb-2"><a href="#quote" class="text-decoration-none">Quote of
+									the
 									Day</a></li>
 							<li class="menu-item mb-2"><a href="#privacy-policy" id="openPrivacyModal"
 									class="text-decoration-none">Privacy Policy</a>
@@ -576,7 +701,8 @@
 						</ul>
 						<h5 class="fw-bold mb-3">Help Us Stay Online</h5>
 						<p class="small text-muted mb-3">
-							Your generous contributions directly fund our hosting, domain, and development costs.
+							Your generous contributions directly fund our hosting, domain, and development
+							costs.
 						</p>
 						<div class="d-flex flex-wrap gap-2 mb-3">
 							<a href="https://www.buymeacoffee.com/thebookmakedlife" target="_blank"
@@ -650,7 +776,8 @@
 			</ol>
 
 			<div class="tip-box">
-				<strong>💡 Tip:</strong> If the bot doesn’t respond, just join the channel — you’ll still get access!
+				<strong>💡 Tip:</strong> If the bot doesn’t respond, just join the channel — you’ll still get
+				access!
 			</div>
 
 			<!-- Footer -->
@@ -677,19 +804,25 @@
 				<div class="modal-body px-4 py-3">
 					<p class="text-muted mb-4">Last updated: September 11, 2025</p>
 
-					<p>This Privacy Policy explains how we collect, use, disclose, and protect personal information when
-						you use our website and related services. By using the site you accept the practices described
+					<p>This Privacy Policy explains how we collect, use, disclose, and protect personal information
+						when
+						you use our website and related services. By using the site you accept the practices
+						described
 						in this policy.</p>
 
 					<h4 class="fw-semibold mt-3">1. Controller</h4>
-					<p>For the purposes of applicable data protection laws, the data controller is the operator of this
-						website. If you have questions, requests, or complaints about how your data is handled, please
+					<p>For the purposes of applicable data protection laws, the data controller is the operator of
+						this
+						website. If you have questions, requests, or complaints about how your data is handled,
+						please
 						contact us at <a
 							href="mailto:infothebookmarkedlife@gmail.com">infothebookmarkedlife@gmail.com</a>.</p>
 
 					<h4 class="fw-semibold mt-3">2. Definitions</h4>
-					<p><strong>Personal data</strong> means any information relating to an identified or identifiable
-						person. <strong>Processing</strong> means any operation performed on personal data (collecting,
+					<p><strong>Personal data</strong> means any information relating to an identified or
+						identifiable
+						person. <strong>Processing</strong> means any operation performed on personal data
+						(collecting,
 						storing, using, sharing, deleting).</p>
 
 					<h4 class="fw-semibold mt-3">3. Information we collect</h4>
@@ -698,30 +831,38 @@
 							message content needed to fulfill the request. We do not link this identifier to other
 							personal data or retain it beyond the time necessary to fulfill the request, unless you
 							explicitly provide additional details.</li>
-						<li><strong>Voluntary submissions</strong> — information you supply through third-party forms
-							(e.g., contact forms, donations). These third parties may collect and store your data under
+						<li><strong>Voluntary submissions</strong> — information you supply through third-party
+							forms
+							(e.g., contact forms, donations). These third parties may collect and store your data
+							under
 							their own policies.</li>
-						<li><strong>Cookies & similar technologies</strong> — this site does not use analytics cookies
+						<li><strong>Cookies & similar technologies</strong> — this site does not use analytics
+							cookies
 							for tracking by default. If we introduce cookies in future, we will disclose them and
 							provide an opt-out mechanism.</li>
 					</ul>
 
 					<h4 class="fw-semibold mt-3">4. Legal bases for processing</h4>
-					<p>Where applicable (for users covered by laws such as the EU GDPR), we rely on the following lawful
+					<p>Where applicable (for users covered by laws such as the EU GDPR), we rely on the following
+						lawful
 						bases:</p>
 					<ul>
-						<li><strong>Consent</strong> — where you voluntarily provide personal data (e.g., contact forms,
+						<li><strong>Consent</strong> — where you voluntarily provide personal data (e.g., contact
+							forms,
 							donations).</li>
-						<li><strong>Contractual necessity</strong> — to perform services you requested (e.g., fulfill a
+						<li><strong>Contractual necessity</strong> — to perform services you requested (e.g.,
+							fulfill a
 							donation or contact request).</li>
 						<li><strong>Legitimate interests</strong> — for security, abuse prevention, and basic site
 							operation, balanced against user rights.</li>
-						<li><strong>Legal obligation</strong> — where required by law to preserve records or respond to
+						<li><strong>Legal obligation</strong> — where required by law to preserve records or respond
+							to
 							legal process.</li>
 					</ul>
 
 					<h4 class="fw-semibold mt-3">5. Data subject rights</h4>
-					<p>Depending on your jurisdiction, you may have some or all of the following rights with respect to
+					<p>Depending on your jurisdiction, you may have some or all of the following rights with respect
+						to
 						your personal data:</p>
 					<ul>
 						<li>Right to access the personal data we hold about you.</li>
@@ -732,24 +873,32 @@
 						<li>Right to object to processing based on legitimate interests or direct marketing.</li>
 					</ul>
 					<p>To exercise any right, contact us at <a
-							href="mailto:infothebookmarkedlife@gmail.com">infothebookmarkedlife@gmail.com</a>. We will
-						respond within the shorter of the timeframes required by applicable law or within 30 calendar
+							href="mailto:infothebookmarkedlife@gmail.com">infothebookmarkedlife@gmail.com</a>. We
+						will
+						respond within the shorter of the timeframes required by applicable law or within 30
+						calendar
 						days. If we need more time, we will inform you and explain why.</p>
 
 					<h4 class="fw-semibold mt-3">6. Children’s privacy</h4>
-					<p>The site is not intended for children under 13. We do not knowingly collect personal information
-						from minors under 13. If you believe we have collected such information, contact us to request
+					<p>The site is not intended for children under 13. We do not knowingly collect personal
+						information
+						from minors under 13. If you believe we have collected such information, contact us to
+						request
 						deletion. Note: U.S. law (COPPA) treats under-13s as a protected group and requires parental
 						consent for data collection in many cases.</p>
 
 					<h4 class="fw-semibold mt-3">7. Sharing & third parties</h4>
-					<p>We do not sell personal data. We may share data with third-party service providers who perform
-						services on our behalf (hosting, forms, donation processors). Those providers are contractually
+					<p>We do not sell personal data. We may share data with third-party service providers who
+						perform
+						services on our behalf (hosting, forms, donation processors). Those providers are
+						contractually
 						bound to handle data securely and only for purposes we authorize.</p>
 
 					<h4 class="fw-semibold mt-3">8. International transfers</h4>
-					<p>If personal data are transferred out of your jurisdiction (e.g., servers or processors outside
-						Sri Lanka or the EU), we will protect such transfers using lawful mechanisms (adequacy decision,
+					<p>If personal data are transferred out of your jurisdiction (e.g., servers or processors
+						outside
+						Sri Lanka or the EU), we will protect such transfers using lawful mechanisms (adequacy
+						decision,
 						standard contractual clauses or other safeguards) as required by applicable law.</p>
 
 					<h4 class="fw-semibold mt-3">9. Data retention</h4>
@@ -762,30 +911,38 @@
 					</ul>
 
 					<h4 class="fw-semibold mt-3">10. Security</h4>
-					<p>We use reasonable technical and organizational measures to protect data (HTTPS, limited access,
-						regular backups). No system is 100% secure; if a breach occurs we will follow applicable law for
+					<p>We use reasonable technical and organizational measures to protect data (HTTPS, limited
+						access,
+						regular backups). No system is 100% secure; if a breach occurs we will follow applicable law
+						for
 						notification and remediation.</p>
 
 					<h4 class="fw-semibold mt-3">11. Breach notification</h4>
-					<p>If a personal data breach occurs that poses a risk to individuals' rights and freedoms, we will
+					<p>If a personal data breach occurs that poses a risk to individuals' rights and freedoms, we
+						will
 						promptly notify the relevant supervisory authority, and where possible, within the timelines
-						required by applicable laws (for instance, within 72 hours under GDPR and in accordance with the
-						notification requirements of Sri Lanka’s PDPA). We will also inform affected individuals when
+						required by applicable laws (for instance, within 72 hours under GDPR and in accordance with
+						the
+						notification requirements of Sri Lanka’s PDPA). We will also inform affected individuals
+						when
 						mandated by law.</p>
 
 					<h4 class="fw-semibold mt-3">12. Your choices and opt-outs</h4>
 					<p>You may opt out of future communications or withdraw consents by contacting us at <a
 							href="mailto:infothebookmarkedlife@gmail.com">infothebookmarkedlife@gmail.com</a>. For
-						third-party services (payment providers, Google Forms, Buy Me a Coffee) please review and use
+						third-party services (payment providers, Google Forms, Buy Me a Coffee) please review and
+						use
 						their opt-out settings.</p>
 
 					<h4 class="fw-semibold mt-3">13. Changes to this policy</h4>
-					<p>We may update this policy. The “Last updated” date will show the effective date of the current
+					<p>We may update this policy. The “Last updated” date will show the effective date of the
+						current
 						version.</p>
 
 					<h4 class="fw-semibold mt-3">14. Supervisory authority & complaints</h4>
 					<p>If you are in Sri Lanka, you may contact the Personal Data Protection Authority (or other
-						designated supervisory authority) to lodge a complaint. If you are in the EU, you may contact
+						designated supervisory authority) to lodge a complaint. If you are in the EU, you may
+						contact
 						your local data protection authority. You retain the right to seek judicial remedies where
 						permitted by law.</p>
 
@@ -817,7 +974,8 @@
 
 				<div class="modal-body px-4 py-3">
 					<p class="text-muted mb-4">Last updated: September 11, 2025</p>
-					<p>Welcome to The Bookmarked Life! These Terms & Conditions ("Terms") govern your use of our website
+					<p>Welcome to The Bookmarked Life! These Terms & Conditions ("Terms") govern your use of our
+						website
 						and services. By accessing or using the site, you agree to comply with and be bound by these
 						Terms. If you do not agree, please do not use our services.</p>
 					<h4 class="fw-semibold mt-3">1. Use of the site</h4>
@@ -832,30 +990,39 @@
 					</ul>
 					<p>We reserve the right to suspend or terminate access for violations.</p>
 					<h4 class="fw-semibold mt-3">2. Intellectual property</h4>
-					<p>All content on the site, including text, images, logos, and software, is owned or licensed by us
+					<p>All content on the site, including text, images, logos, and software, is owned or licensed by
+						us
 						and protected by copyright and other intellectual property laws. You may not use our content
 						without permission.</p>
 					<h4 class="fw-semibold mt-3">3. Third-party links</h4>
-					<p>The site may contain links to third-party websites. We do not control or endorse these sites and
-						are not responsible for their content or practices. Your use of third-party sites is at your own
+					<p>The site may contain links to third-party websites. We do not control or endorse these sites
+						and
+						are not responsible for their content or practices. Your use of third-party sites is at your
+						own
 						risk.</p>
 					<h4 class="fw-semibold mt-3">4. Disclaimers</h4>
-					<p>The site and its content are provided "as is" without warranties of any kind. We do not guarantee
-						the accuracy, completeness, or reliability of the content. Your use of the site is at your own
+					<p>The site and its content are provided "as is" without warranties of any kind. We do not
+						guarantee
+						the accuracy, completeness, or reliability of the content. Your use of the site is at your
+						own
 						risk.</p>
 					<h4 class="fw-semibold mt-3">5. Limitation of liability</h4>
 					<p>To the maximum extent permitted by law, we are not liable for any direct
-						, indirect, incidental, consequential, or punitive damages arising from your use of the site.
+						, indirect, incidental, consequential, or punitive damages arising from your use of the
+						site.
 					</p>
 					<h4 class="fw-semibold mt-3">6. Indemnification</h4>
 					<p>You agree to indemnify and hold us harmless from any claims, damages, or
 						expenses arising from your violation of these Terms or your use of the site.</p>
 					<h4 class="fw-semibold mt-3">7. Changes to the Terms</h4>
-					<p>We may update these Terms at any time. The "Last updated" date will indicate the effective date
-						of the current version. Your continued use of the site after changes constitutes acceptance of
+					<p>We may update these Terms at any time. The "Last updated" date will indicate the effective
+						date
+						of the current version. Your continued use of the site after changes constitutes acceptance
+						of
 						the new Terms.</p>
 					<h4 class="fw-semibold mt-3">8. Governing law</h4>
-					<p>These Terms are governed by the laws of Sri Lanka. Any disputes will be resolved in the courts of
+					<p>These Terms are governed by the laws of Sri Lanka. Any disputes will be resolved in the
+						courts of
 						Sri Lanka.</p>
 					<h4 class="fw-semibold mt-3">9. Contact</h4>
 					<p>If you have questions or concerns about these Terms, please contact us at <a
@@ -890,14 +1057,17 @@
 						expect, and when refunds are possible.</p>
 
 					<h4 class="fw-semibold mt-3">1. Nature of donations</h4>
-					<p>Donations are voluntary contributions to support site operations and content. Donations do not
-						create a contract for goods or services unless explicitly stated. Payment processing is handled
+					<p>Donations are voluntary contributions to support site operations and content. Donations do
+						not
+						create a contract for goods or services unless explicitly stated. Payment processing is
+						handled
 						by third-party platforms (e.g., Buy Me a Coffee) and is subject to their terms and privacy
 						policies.</p>
 
 					<h4 class="fw-semibold mt-3">2. Donation processing & anonymity</h4>
 					<p>We do not directly process payment card data. Donors may be able to give anonymously via the
-						third-party platform if that feature is offered. We keep donation records for accounting and tax
+						third-party platform if that feature is offered. We keep donation records for accounting and
+						tax
 						purposes.</p>
 
 					<h4 class="fw-semibold mt-3">3. Refunds</h4>
@@ -908,12 +1078,14 @@
 						<li>When a promised benefit directly tied to the donation is not delivered (if any).</li>
 					</ul>
 					<p>To request a refund, contact us at <a
-							href="mailto:infothebookmarkedlife@gmail.com">infothebookmarkedlife@gmail.com</a> within 30
+							href="mailto:infothebookmarkedlife@gmail.com">infothebookmarkedlife@gmail.com</a> within
+						30
 						days of the donation and include proof (transaction receipt, date, platform). Refunds may be
 						reduced by non-reversible fees charged by payment providers.</p>
 
 					<h4 class="fw-semibold mt-3">4. Records & taxes</h4>
-					<p>Donors are responsible for any tax implications in their jurisdiction. We retain donation records
+					<p>Donors are responsible for any tax implications in their jurisdiction. We retain donation
+						records
 						for at least 7 years or as required by applicable law.</p>
 
 					<h4 class="fw-semibold mt-3">5. Changes</h4>
@@ -938,20 +1110,23 @@
 						<img src="images/logo.png" alt="The Bookmarked Life Logo"
 							class="img-fluid rounded-circle shadow" style="max-width:80px;">
 					</a>
-					<h2 class="modal-title fw-bold text-primary" id="dmcaModalLabel">Copyright & Takedown Policy</h2>
+					<h2 class="modal-title fw-bold text-primary" id="dmcaModalLabel">Copyright & Takedown Policy
+					</h2>
 				</div>
 
 				<div class="modal-body px-4 py-3">
 					<p class="text-muted mb-4">Last updated: September 11, 2025</p>
 
-					<p>If you believe content on the site infringes your copyright, please send a notice to the contact
+					<p>If you believe content on the site infringes your copyright, please send a notice to the
+						contact
 						email below. We respond to valid notices and will remove or disable access to infringing
 						material where appropriate. This policy describes how to notify us and how to submit a
 						counter-notice.</p>
 
 					<h4 class="fw-semibold mt-3">1. How to submit an infringement notice</h4>
 					<p>Send an email to: <a
-							href="mailto:infothebookmarkedlife@gmail.com">infothebookmarkedlife@gmail.com</a> with all
+							href="mailto:infothebookmarkedlife@gmail.com">infothebookmarkedlife@gmail.com</a> with
+						all
 						of the following:</p>
 					<ul>
 						<li>Your full name and contact information (email, postal address).</li>
@@ -959,7 +1134,8 @@
 						<li>Specific URL(s) on the site where the infringing material appears.</li>
 						<li>A statement that you have a good-faith belief the use is not authorized by the copyright
 							owner.</li>
-						<li>A statement that the information in the notice is accurate and that you are the copyright
+						<li>A statement that the information in the notice is accurate and that you are the
+							copyright
 							owner or authorized to act on the owner's behalf (under penalty of perjury).</li>
 						<li>Your electronic or physical signature.</li>
 					</ul>
@@ -981,8 +1157,10 @@
 						third-party rights.</p>
 
 					<h4 class="fw-semibold mt-3">4. Limitation & jurisdiction</h4>
-					<p>We do not pre-screen all user content. This policy is governed by the laws of Sri Lanka. If you
-						are outside Sri Lanka and have specific statutory takedown procedures (e.g., DMCA in the US),
+					<p>We do not pre-screen all user content. This policy is governed by the laws of Sri Lanka. If
+						you
+						are outside Sri Lanka and have specific statutory takedown procedures (e.g., DMCA in the
+						US),
 						please include any additional details required in your notice.</p>
 
 					<h4 class="fw-semibold mt-3">5. Contact</h4>
@@ -1005,6 +1183,8 @@
 	<script src="js/plugins.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/books.js"></script>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<script>
 		const hamburger = document.querySelector('.hamburger');
