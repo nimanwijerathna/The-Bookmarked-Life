@@ -4001,14 +4001,6 @@ td:last-child {
   transform: scale(1.03);
 }
 
-.author-image {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
 /* Swiper Navigation */
 .epaper-slider .swiper-button-next,
 .epaper-slider .swiper-button-prev {
