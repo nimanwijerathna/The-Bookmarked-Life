@@ -106,8 +106,8 @@ function renderBooks(books, category = "All Genre", currentPage = 1) {
           <figure class="product-style d-flex justify-content-center align-items-center mb-3 position-relative" style="height:400px;">
             ${adultHTML}
             ${upcomingHTML}
-${book.image 
-  ? `<div class="skeleton">
+${book.image
+        ? `<div class="skeleton">
        <img src="${book.image}" 
             alt="${escapeHtml(book.title)}" 
             class="img-fluid mx-auto d-block" 
@@ -115,7 +115,7 @@ ${book.image
             onload="this.style.display='block'; this.parentElement.classList.remove('skeleton');"
             onerror="this.onerror=null; this.src='${DEFAULT_IMAGE}'; this.style.display='block'; this.parentElement.classList.remove('skeleton');" />
      </div>`
-  : ""}
+        : ""}
 
           </figure>
 
@@ -356,32 +356,123 @@ $('.main-slider').slick({
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    new Swiper('.authors-slider', {
-      loop: true,
-      spaceBetween: 20,
-      slidesPerView: 1,
-      centeredSlides: false,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+  new Swiper('.authors-slider', {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    centeredSlides: false,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // Mobile
+      576: {
+        slidesPerView: 2,
       },
-      breakpoints: {
-        // Mobile
-        576: {
-          slidesPerView: 2,
-        },
-        // Tablet
-        768: {
-          slidesPerView: 3,
-        },
-        // Desktop
-        992: {
-          slidesPerView: 4,
-        },
-        // Large desktop
-        1200: {
-          slidesPerView: 5,
-        }
+      // Tablet
+      768: {
+        slidesPerView: 3,
+      },
+      // Desktop
+      992: {
+        slidesPerView: 4,
+      },
+      // Large desktop
+      1200: {
+        slidesPerView: 5,
+      }
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+
+  const titleEl = document.querySelector('#epaper .section-title');
+  if (titleEl) {
+    titleEl.innerHTML = `Tharuni E-Paper • ${day}/${month}/${year}`;
+  }
+
+  const baseUrl = `https://epaper.tharunie.lk/News/${year}/${month}/${day}/pg`;
+
+  const wrapper = document.querySelector('.epaper-slider .swiper-wrapper');
+  if (!wrapper) {
+    console.error('E-paper slider wrapper not found!');
+    return;
+  }
+
+  let slideCount = 0;
+  const maxPages = 30;
+
+  for (let i = 1; i <= maxPages; i++) {
+    const pageNum = String(i).padStart(2, '0');
+    const imgSrc = `${baseUrl}${pageNum}.jpg`;
+
+    // Create slide immediately (optimistic)
+    const slide = document.createElement('div');
+    slide.className = 'swiper-slide';
+    slide.innerHTML = `
+      <div class="author-card" data-src="${imgSrc}" style="padding:8px;cursor:pointer;">
+        <img src="${imgSrc}" alt="Page ${i}" class="author-image" 
+             style="width:100%;max-width:200px;height:auto;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+      </div>
+    `;
+    wrapper.appendChild(slide);
+    slideCount++;
+  }
+
+  // === 4. INIT SWIPER ===
+  new Swiper('.epaper-slider', {
+    loop: false,
+    spaceBetween: 20,
+    slidesPerView: 2,
+    navigation: {
+      nextEl: '.epaper-slider .swiper-button-next',
+      prevEl: '.epaper-slider .swiper-button-prev',
+    },
+    breakpoints: {
+      576: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
+      992: { slidesPerView: 5 },
+      1200: { slidesPerView: 6 }
+    }
+  });
+
+  // === 5. LIGHTBOX (if you have #lightbox in HTML) ===
+  const lightbox = document.getElementById('lightbox');
+  if (lightbox) {
+    const lightboxImg = lightbox.querySelector('.lightbox-image');
+    const closeBtn = lightbox.querySelector('.close');
+
+    document.addEventListener('click', (e) => {
+      const card = e.target.closest('.author-card');
+      if (card) {
+        lightboxImg.src = card.getAttribute('data-src');
+        lightbox.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
       }
     });
-  });
+
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    closeBtn?.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+        closeLightbox();
+      }
+    });
+  }
+
+  console.log(`✅ E-paper slider initialized for ${year}-${month}-${day} with ${slideCount} pages (optimistic load)`);
+});
