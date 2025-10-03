@@ -387,48 +387,47 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  // === 1. GET TODAY'S DATE ===
   const now = new Date();
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
 
+  // Update title with date
   const titleEl = document.querySelector('#epaper .section-title');
   if (titleEl) {
-    titleEl.innerHTML = `Tharuni E-Paper • ${day}/${month}/${year}`;
+    titleEl.textContent = `Tharuni E-Paper • ${day}/${month}/${year}`;
   }
 
+  // === 2. CORRECT BASE URL (NO SPACES!) ===
   const baseUrl = `https://epaper.tharunie.lk/News/${year}/${month}/${day}/pg`;
 
+  // === 3. GENERATE SLIDES ===
   const wrapper = document.querySelector('.epaper-slider .swiper-wrapper');
   if (!wrapper) {
     console.error('E-paper slider wrapper not found!');
     return;
   }
 
-  let slideCount = 0;
   const maxPages = 30;
-
   for (let i = 1; i <= maxPages; i++) {
     const pageNum = String(i).padStart(2, '0');
     const imgSrc = `${baseUrl}${pageNum}.jpg`;
 
-    // Create slide immediately (optimistic)
     const slide = document.createElement('div');
     slide.className = 'swiper-slide';
     slide.innerHTML = `
-      <div class="author-card" data-src="${imgSrc}" style="padding:8px;cursor:pointer;">
-        <img src="${imgSrc}" alt="Page ${i}" class="author-image" 
-             style="width:100%;max-width:200px;height:auto;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+      <div class="author-card" data-src="${imgSrc}">
+        <img src="${imgSrc}" alt="Page ${i}" class="author-image">
       </div>
     `;
     wrapper.appendChild(slide);
-    slideCount++;
   }
 
   // === 4. INIT SWIPER ===
   new Swiper('.epaper-slider', {
     loop: false,
-    spaceBetween: 20,
+    spaceBetween: 10,
     slidesPerView: 2,
     navigation: {
       nextEl: '.epaper-slider .swiper-button-next',
@@ -442,37 +441,49 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // === 5. LIGHTBOX (if you have #lightbox in HTML) ===
-  const lightbox = document.getElementById('lightbox');
-  if (lightbox) {
-    const lightboxImg = lightbox.querySelector('.lightbox-image');
-    const closeBtn = lightbox.querySelector('.close');
+  // === 5. FULLSCREEN ON CLICK (NO LIGHTBOX) ===
+  document.addEventListener('click', function (e) {
+    const card = e.target.closest('.author-card');
+    if (!card) return;
 
-    document.addEventListener('click', (e) => {
-      const card = e.target.closest('.author-card');
-      if (card) {
-        lightboxImg.src = card.getAttribute('data-src');
-        lightbox.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
+    const imgSrc = card.getAttribute('data-src');
+    
+    // Create fullscreen image
+    const fullImg = document.createElement('img');
+    fullImg.src = imgSrc;
+    fullImg.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      background: black;
+      z-index: 999999;
+      cursor: zoom-out;
+      image-rendering: -webkit-optimize-contrast;
+    `;
+    
+    document.body.appendChild(fullImg);
+    document.body.style.overflow = 'hidden';
+
+    // Close on click or Escape
+    const close = () => {
+      if (fullImg.parentNode) {
+        document.body.removeChild(fullImg);
+        document.body.style.overflow = '';
       }
-    });
+    };
 
-    function closeLightbox() {
-      lightbox.style.display = 'none';
-      document.body.style.overflow = '';
-    }
-
-    closeBtn?.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && lightbox.style.display === 'flex') {
-        closeLightbox();
+    fullImg.addEventListener('click', close);
+    const escHandler = (e) => {
+      if (e.key === 'Escape') {
+        close();
+        document.removeEventListener('keydown', escHandler);
       }
-    });
-  }
+    };
+    document.addEventListener('keydown', escHandler);
+  });
 
-  console.log(`✅ E-paper slider initialized for ${year}-${month}-${day} with ${slideCount} pages (optimistic load)`);
+  console.log(`✅ Loaded e-paper for ${year}-${month}-${day}`);
 });
