@@ -387,27 +387,35 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  // === 1. GET TODAY'S DATE ===
+  // === ALWAYS USE THE MOST RECENT FRIDAY ===
   const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, '0');
-  const day = String(now.getDate()).padStart(2, '0');
+  const dayOfWeek = now.getDay(); // 0=Sun, 1=Mon, ..., 5=Fri, 6=Sat
 
-  // Update title with date
+  // Calculate days to subtract to get to last Friday
+  // If today is Friday → 0 days back
+  // If today is Saturday → 1 day back
+  // If today is Sunday → 2 days back
+  // ...
+  // If today is Thursday → 6 days back
+  const daysSinceFriday = (dayOfWeek + 2) % 7; // Because Friday is 5, and (5 + 2) % 7 = 0
+  const fridayDate = new Date(now);
+  fridayDate.setDate(now.getDate() - daysSinceFriday);
+
+  const year = fridayDate.getFullYear();
+  const month = String(fridayDate.getMonth() + 1).padStart(2, '0');
+  const day = String(fridayDate.getDate()).padStart(2, '0');
+
+  // Update title
   const titleEl = document.querySelector('#epaper .section-title');
   if (titleEl) {
     titleEl.textContent = `Tharuni E-Paper • ${day}/${month}/${year}`;
   }
 
-  // === 2. CORRECT BASE URL (NO SPACES!) ===
+  // ✅ CORRECT URL — NO SPACES
   const baseUrl = `https://epaper.tharunie.lk/News/${year}/${month}/${day}/pg`;
 
-  // === 3. GENERATE SLIDES ===
   const wrapper = document.querySelector('.epaper-slider .swiper-wrapper');
-  if (!wrapper) {
-    console.error('E-paper slider wrapper not found!');
-    return;
-  }
+  if (!wrapper) return;
 
   const maxPages = 30;
   for (let i = 1; i <= maxPages; i++) {
@@ -424,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function () {
     wrapper.appendChild(slide);
   }
 
-  // === 4. INIT SWIPER ===
+  // Swiper
   new Swiper('.epaper-slider', {
     loop: false,
     spaceBetween: 10,
@@ -441,49 +449,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // === 5. FULLSCREEN ON CLICK (NO LIGHTBOX) ===
+  // Fullscreen click
   document.addEventListener('click', function (e) {
     const card = e.target.closest('.author-card');
     if (!card) return;
 
     const imgSrc = card.getAttribute('data-src');
-    
-    // Create fullscreen image
     const fullImg = document.createElement('img');
     fullImg.src = imgSrc;
     fullImg.style.cssText = `
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: contain;
-      background: black;
-      z-index: 999999;
-      cursor: zoom-out;
-      image-rendering: -webkit-optimize-contrast;
+      position: fixed; top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      object-fit: contain; background: black;
+      z-index: 999999; cursor: zoom-out;
     `;
-    
     document.body.appendChild(fullImg);
     document.body.style.overflow = 'hidden';
 
-    // Close on click or Escape
     const close = () => {
-      if (fullImg.parentNode) {
-        document.body.removeChild(fullImg);
-        document.body.style.overflow = '';
-      }
+      document.body.removeChild(fullImg);
+      document.body.style.overflow = '';
     };
-
     fullImg.addEventListener('click', close);
-    const escHandler = (e) => {
-      if (e.key === 'Escape') {
-        close();
-        document.removeEventListener('keydown', escHandler);
-      }
-    };
-    document.addEventListener('keydown', escHandler);
+    const esc = (e) => { if (e.key === 'Escape') { close(); document.removeEventListener('keydown', esc); } };
+    document.addEventListener('keydown', esc);
   });
 
-  console.log(`✅ Loaded e-paper for ${year}-${month}-${day}`);
+  console.log(`✅ Loaded e-paper for Friday: ${year}-${month}-${day}`);
 });
