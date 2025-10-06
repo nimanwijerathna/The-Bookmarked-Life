@@ -49,7 +49,7 @@
         }
 
         .logo-text {
-            font-size: 1.4rem;
+            font-size: 0.5rem;
             font-weight: 700;
             color: var(--primary-color);
             text-decoration: none;
@@ -262,9 +262,6 @@
                 <div class="d-flex gap-2 mt-3">
                     <button type="button" class="btn btn-success btn-lg flex-fill" onclick="sendEmail()">
                         <i class="fas fa-paper-plane"></i> Finalize & Send Order
-                    </button>
-                    <button type="button" class="btn btn-outline-primary btn-lg" onclick="captureDialog()">
-                        <i class="fas fa-camera"></i>
                     </button>
                 </div>
             </form>
@@ -515,7 +512,7 @@
             orderDetails += `FINAL TOTAL: Rs.${discountedTotal.toFixed(2)}\n`;
             orderDetails += `--------------------------------------\n\n`;
 
-            const note = `(ATTENTION: Please check for the attached order screenshot if you captured one.)\n\n`;
+            const note = `(ATTENTION: Please check for the attached order screenshot that was captured automatically.)\n\n`;
             const body = encodeURIComponent(
                 `${note}${orderDetails}Customer Details:\nEmail: ${email}\nMobile: ${mobile}\n\nAdditional Message:\n${message || 'N/A'}`
             );
