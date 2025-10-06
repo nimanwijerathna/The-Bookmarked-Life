@@ -1,123 +1,138 @@
+<!-- 
+	Copyright © 2025 The Bookmarked Life. 
+	This website and template are the property of The Bookmarked Life and its author, Niman Wijerathna.
+	Unauthorized copying, distribution, or use of this template is prohibited.
+	For permissions, licensing, or inquiries, contact: infothebookmarkedlife@gmail.com
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>📚 The Bookmarked Life - Limited Book Store</title>
+    <title>📚 The Bookmarked Life - Premium Book Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --primary-color: #0d6efd;
-            --success-color: #28a745;
-            --shadow-color: rgba(0, 0, 0, 0.1);
+            --primary-color: #34495e;
+            --accent-color: #2ecc71;
+            --bg-color: #ecf0f1;
+            --shadow-light: rgba(0, 0, 0, 0.08);
         }
 
         body {
             font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f9; 
+            background-color: var(--bg-color);
+            padding-top: 60px;
         }
 
         .header-bar {
-            background-color: #F6F2E9;
-            color: white;
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-            margin-bottom: 20px;
+            background-color: #ffffff;
+            border-bottom: 3px solid var(--accent-color);
+            box-shadow: 0 1px 6px var(--shadow-light);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 8px 0;
         }
 
-        .header-bar h1 {
-            margin: 0;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .container {
+        .header-content {
             max-width: 1200px;
-            margin: 20px auto; 
-            border-radius: 10px;
-            box-shadow: 0 4px 20px var(--shadow-color);
-            padding: 30px;
-            background: #fff;
+            margin: auto;
+            padding: 0 15px;
         }
 
-        .logo{
-            height: 50px;
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
         }
         
+        .container-app {
+            max-width: 1100px;
+            margin: 30px auto 50px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px var(--shadow-light);
+            padding: 30px;
+        }
+
         @media (max-width: 768px) {
-            .container {
-                margin: 0 auto 20px auto;
+            .container-app {
+                margin: 20px 10px;
                 padding: 15px;
                 border-radius: 0;
+                box-shadow: none;
             }
         }
 
         #book-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 20px;
-            margin-top: 20px;
+            padding-top: 15px;
         }
 
         .book-card {
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
+            border: none;
+            border-radius: 10px;
             text-align: center;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            padding: 15px 10px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .book-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 10px var(--shadow-color);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
 
         .book-card img {
-            width: 100%; 
-            max-width: 120px;
-            height: 180px;
+            width: 100%;
+            max-width: 110px;
+            height: 160px;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: 6px;
             margin-bottom: 10px;
             cursor: pointer;
+            border: 1px solid #ddd;
         }
 
         .book-card h5 {
-            font-size: 0.95em;
+            font-size: 0.9em;
             font-weight: 600;
-            color: #343a40;
-            min-height: 38px;
+            min-height: 34px;
             overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-        }
-
-        .book-card p {
-            color: #6c757d;
-            font-size: 0.85em;
-            margin-bottom: 5px;
+            line-height: 1.2;
         }
 
         .book-price {
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: 700;
             color: var(--primary-color);
-            margin-bottom: 10px;
+            margin: 5px 0 10px;
         }
 
         .add-to-cart-btn {
-            background-color: var(--success-color);
+            background-color: var(--accent-color);
             border: none;
             font-weight: 600;
+            font-size: 0.85rem;
+            padding: 8px 10px;
+        }
+        
+        .add-to-cart-btn:hover {
+            background-color: #27ae60;
         }
 
         .dialog-overlay {
@@ -128,83 +143,91 @@
             width: 100vw;
             height: 100vh;
             background: rgba(0, 0, 0, 0.6);
-            z-index: 1000;
-            padding: 10px; 
+            z-index: 2000;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto; 
         }
 
         .dialog {
             background: #fff;
             border-radius: 10px;
-            max-width: 420px;
-            margin: 40px auto; 
-            padding: 24px;
+            max-width: 450px;
+            margin: 40px auto;
+            padding: 30px;
             position: relative;
-            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
-            animation: fadeIn 0.3s ease;
-            overflow-y: auto; 
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            width: 100%;
+            max-height: 90vh; 
             display: flex;
             flex-direction: column;
         }
-        
-        @media (max-width: 576px) {
-            .dialog {
-                max-width: 95%;
-                margin: 20px auto;
-            }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: #777;
+            line-height: 1;
         }
 
         #cartItems {
-            max-height: 250px;
+            max-height: 200px;
             overflow-y: auto;
-            border: 1px solid #e9ecef;
+            border: 1px solid #e0e0e0;
             padding: 10px;
             margin-bottom: 15px;
-            border-radius: 5px;
-            flex-shrink: 0; 
+            border-radius: 6px;
         }
 
         .cart-item {
             display: flex;
             align-items: center;
-            margin-bottom: 12px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 8px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
         }
 
-        .cart-item img {
-            width: 40px;
-            height: 54px;
-            border-radius: 3px;
-            margin-right: 12px;
+        .cart-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
-        .close-btn {
-            position: absolute;
-            top: 12px;
-            right: 16px;
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            color: #495057;
+        .cart-qty {
+            padding: 0.1rem 0.2rem;
+            height: 30px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 
 <body>
     <header class="header-bar">
-        <div class="container d-flex justify-content-between align-items-center bg-transparent shadow-none p-0">
-            <h1 class="text-dark fs-6"><img src="images/logo.png" class="logo" alt="The Bookmarked Life Logo"> The Bookmarked Life</h1>
-            <button class="btn btn-warning btn-sm" type="button" id="policyBtn">
-                <i class="fas fa-info-circle"></i> Policy
-            </button>
+        <div class="header-content d-flex justify-content-between align-items-center">
+            <a href="#" class="logo-text">
+                <i class="fas fa-bookmark me-2 text-dark"></i> The Bookmarked Life
+            </a>
+            <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary" type="button" id="policyBtn">
+                    <i class="fas fa-shield-alt"></i> Policy
+                </button>
+                <button class="btn btn-sm btn-info" type="button" id="instructionBtn">
+                    <i class="fas fa-info-circle"></i> How to Order
+                </button>
+            </div>
         </div>
     </header>
 
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="h3 fw-bold m-0">Featured Books Sale</h2>
-            <button class="btn btn-primary" type="button" onclick="openCartFromGrid()">
+    <div class="container-app">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4 pb-3 border-bottom">
+            <h2 class="h4 fw-bold m-0 text-dark mb-2 mb-md-0">Featured Books Sale</h2>
+            <button class="btn btn-lg btn-primary shadow-sm" type="button" onclick="openCartFromGrid()">
                 <i class="fas fa-shopping-cart"></i> Cart (<span id="cartItemCount">0</span>)
             </button>
         </div>
@@ -213,61 +236,71 @@
             </div>
     </div>
 
+    <footer class="text-center text-muted p-3">
+        <div class="container small">
+            &copy; <span id="currentYear"></span> The Bookmarked Life. All Rights Reserved.
+        </div>
+    </footer>
+
+
     <div class="dialog-overlay" id="cartDialogOverlay">
         <div class="dialog" id="cartDialog">
             <button class="close-btn" onclick="closeDialog('cartDialogOverlay')">&times;</button>
-            <h2 class="h4">Your Shopping Cart</h2>
+            <h2 class="h4 text-center" style="color: var(--primary-color);">🛒 Your Shopping Cart</h2>
+            <hr class="mt-1">
             <div id="cartItems"></div>
-            <p class="h5 mt-2"><b>Total:</b> Rs <span id="cartTotal">0.00</span></p>
+            <p class="h5 mt-2 fw-bold text-end">Total: Rs <span id="cartTotal">0.00</span></p>
             <hr>
             <form id="cartForm">
                 <label class="form-label fw-bold">Contact Details</label>
                 <input type="email" id="email" required placeholder="Email Address" class="form-control mb-2">
-                <input type="tel" id="mobile" required placeholder="Mobile (07XXXXXXXX)" class="form-control mb-2">
+                <input type="tel" id="mobile" required placeholder="Mobile (07XXXXXXXX)" class="form-control mb-3">
+                
                 <label class="form-label fw-bold">Message (optional)</label>
-                <textarea id="message" class="form-control" placeholder="Any notes or questions?"></textarea>
+                <textarea id="message" class="form-control mb-3" placeholder="Any delivery notes or questions?"></textarea>
+                
                 <div class="d-flex gap-2 mt-3">
-                    <button type="button" class="btn btn-success flex-fill" onclick="sendEmail()">
-                        <i class="fas fa-paper-plane"></i> Send Order
+                    <button type="button" class="btn btn-success btn-lg flex-fill" onclick="sendEmail()">
+                        <i class="fas fa-paper-plane"></i> Finalize & Send Order
                     </button>
-                    <button type="button" class="btn btn-outline-secondary flex-fill" onclick="captureDialog()">
-                        <i class="fas fa-camera"></i> Screenshot
+                    <button type="button" class="btn btn-outline-primary btn-lg" onclick="captureDialog()">
+                        <i class="fas fa-camera"></i>
                     </button>
                 </div>
             </form>
-            <img id="cartImgPreview" class="mt-3 img-fluid rounded d-none" alt="Dialog Screenshot Preview">
+            <img id="cartImgPreview" class="mt-3 img-fluid rounded border d-none" alt="Order Summary Screenshot Preview">
         </div>
     </div>
 
     <div class="dialog-overlay" id="bookDetailDialogOverlay">
         <div class="dialog" id="bookDetailDialog">
             <button class="close-btn" onclick="closeDialog('bookDetailDialogOverlay')">&times;</button>
-            <h4 id="detailTitle" class="text-center"></h4>
-            <div class="text-center">
-                <img id="detailImage" class="detail-img" alt="Book Cover">
+            <h4 id="detailTitle" class="text-center text-dark mb-3"></h4>
+            <div class="text-center mb-3">
+                <img id="detailImage" class="img-fluid" style="width: 140px; height: 210px; object-fit: cover; border: 1px solid #ccc; border-radius: 5px;" alt="Book Cover">
             </div>
-            <p><strong>Author:</strong> <span id="detailAuthor"></span></p>
-            <p><strong>Price:</strong> Rs <span id="detailPrice"></span></p>
+            <p class="mb-1"><strong>Author:</strong> <span id="detailAuthor" class="text-muted"></span></p>
+            <p class="mb-3"><strong>Price:</strong> <span class="text-primary fw-bold">Rs <span id="detailPrice"></span></span></p>
             <hr>
-            <button class="btn btn-secondary w-100" onclick="closeDialog('bookDetailDialogOverlay')">Close</button>
+            <button class="btn btn-secondary w-100" onclick="closeDialog('bookDetailDialogOverlay')">Close Details</button>
         </div>
     </div>
 
-    <div class="dialog-overlay" id="instructionDialogOverlay" style="display:block;">
+    <div class="dialog-overlay" id="instructionDialogOverlay">
         <div class="dialog" id="instructionDialog">
             <button class="close-btn" onclick="closeDialog('instructionDialogOverlay')">&times;</button>
-            <h2 class="h4 text-primary"><i class="fas fa-lightbulb"></i> How to Order</h2>
+            <h2 class="h4 text-info"><i class="fas fa-lightbulb"></i> How to Order</h2>
             <hr>
-            <ol>
+            <ol class="small">
                 <li>Click <b>Add to Cart</b> on your desired books.</li>
-                <li>Click <b>Cart</b> in the top right to view checkout.</li>
-                <li>Review your items, enter your details, and click <b>Send Order</b>.</li>
-                <li>We’ll verify and confirm your order with payment details.</li>
-                <li>Delivery is handled securely via <b>3rd party delivery Services</b>.</li>
+                <li>Click the <b>Cart</b> button (top right) to open the checkout.</li>
+                <li>Review your quantity, enter your contact details, and click <b>Finalize & Send Order</b>.</li>
+                <li>This opens your email client with the pre-filled order details.</li>
+                <li>We'll contact you for payment confirmation and secure delivery arrangements.</li>
             </ol>
             <hr>
-            <p class="text-secondary small">
-                <b>Note:</b> Offers are valid for a limited time. T & C apply.
+            <p class="text-secondary small text-center">
+                Note: Offers are valid for a limited time. T & C apply.
             </p>
         </div>
     </div>
@@ -277,13 +310,13 @@
             <button class="close-btn" onclick="closeDialog('returnPolicyDialogOverlay')">&times;</button>
             <h2 class="h4 text-warning"><i class="fas fa-undo-alt"></i> Return & Cancellation Policy</h2>
             <hr>
-            <ul>
+            <ul class="small">
                 <li>Orders may be cancelled <b>before</b> payment and confirmation.</li>
                 <li>Once confirmed and paid, cancellations cannot be made.</li>
                 <li>Refunds (if applicable) will be processed within <b>5–7 working days</b> after verification.</li>
             </ul>
             <hr>
-            <p class="text-secondary small">
+            <p class="text-secondary small text-center">
                 Thank you for supporting our book community!
             </p>
         </div>
@@ -311,15 +344,17 @@
         let cartIndices = [];
         const bookGrid = document.getElementById('book-grid');
 
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
         books.forEach((book, idx) => {
             const card = document.createElement('div');
             card.className = 'book-card';
             card.innerHTML = `
                 <img src="${book.image}" alt="${book.title} cover">
                 <h5 class="card-title">${book.title}</h5>
-                <p class="card-text text-muted">${book.author}</p>
+                <p class="card-text text-muted small">${book.author}</p>
                 <div class="book-price">Rs ${book.price.toFixed(2)}</div>
-                <button class="btn btn-success add-to-cart-btn btn-sm" data-idx="${idx}">
+                <button class="btn btn-success add-to-cart-btn w-100" data-idx="${idx}">
                     <i class="fas fa-cart-plus"></i> Add to Cart
                 </button>
             `;
@@ -333,15 +368,14 @@
                 if (!cartIndices.includes(index)) {
                     cartIndices.push(index);
                     e.currentTarget.classList.replace('btn-success', 'btn-primary');
-                    e.currentTarget.innerHTML = '<i class="fas fa-check"></i> Added';
+                    e.currentTarget.innerHTML = '<i class="fas fa-check"></i> Added!';
                     setTimeout(() => {
-                         e.currentTarget.classList.replace('btn-primary', 'btn-success');
-                         e.currentTarget.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
+                        e.currentTarget.classList.replace('btn-primary', 'btn-success');
+                        e.currentTarget.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
                     }, 1500);
                 } else {
-                    alert(`${book.title} is already in the cart!`);
+                    alert(`${book.title} is already in the cart. Adjust quantity in the Cart dialog.`);
                 }
-
                 updateCartCount();
             });
 
@@ -352,47 +386,56 @@
             document.getElementById('cartItemCount').textContent = cartIndices.length;
         }
 
-        function openCartFromGrid() {
-            if (cartIndices.length === 0) {
-                alert("Your cart is empty! Add some books first.");
-                return;
-            }
-            openDialog(cartIndices);
-        }
-
         function openBookDetail(book) {
             document.getElementById('detailTitle').textContent = book.title;
             document.getElementById('detailAuthor').textContent = book.author;
             document.getElementById('detailPrice').textContent = book.price.toFixed(2);
             document.getElementById('detailImage').src = book.image;
-            document.getElementById('bookDetailDialogOverlay').style.display = 'flex'; 
+            document.getElementById('bookDetailDialogOverlay').style.display = 'flex';
         }
 
-        function openDialog(bookIdxs) {
+        function closeDialog(overlayId) {
+            document.getElementById(overlayId).style.display = 'none';
+        }
+
+        function openCartFromGrid() {
+            if (cartIndices.length === 0) {
+                alert("Your cart is empty! Please add books before checking out.");
+                return;
+            }
+            openCartDialog(cartIndices);
+        }
+
+        function openCartDialog(bookIdxs) {
             const cartItemsDiv = document.getElementById('cartItems');
             cartItemsDiv.innerHTML = '';
-            let total = 0;
-
+            
             bookIdxs.forEach(idx => {
                 const book = books[idx];
                 const itemDiv = document.createElement('div');
                 itemDiv.className = 'cart-item';
                 itemDiv.innerHTML = `
                     <img src="${book.image}" alt="${book.title}">
-                    <div class="flex-grow-1">
+                    <div class="flex-grow-1 ms-2">
                         <strong class="d-block">${book.title}</strong> 
                         <span class="text-muted small">${book.author}</span>
                     </div>
                     <div class="d-flex flex-column align-items-end">
-                         <span class="fw-bold text-nowrap">Rs${book.price.toFixed(2)}</span>
-                         <label class="ms-2 small">Qty: <input type="number" min="1" value="1" data-idx="${idx}" class="cart-qty form-control form-control-sm text-center" style="width:55px; display:inline-block;"></label>
+                         <span class="fw-bold text-nowrap" data-price="${book.price}">Rs${book.price.toFixed(2)}</span>
+                         <label class="ms-2 small mt-1">
+                             <input type="number" min="1" value="1" data-idx="${idx}" class="cart-qty form-control text-center" style="width:65px;">
+                         </label>
                     </div>
                 `;
                 cartItemsDiv.appendChild(itemDiv);
             });
 
             document.querySelectorAll('.cart-qty').forEach(input => {
-                input.addEventListener('change', () => {
+                input.addEventListener('change', (e) => {
+                    const val = parseInt(e.target.value);
+                    if (val < 1 || isNaN(val)) {
+                         e.target.value = 1;
+                    }
                     updateCartTotal();
                 });
             });
@@ -400,90 +443,117 @@
             function updateCartTotal() {
                 let currentTotal = 0;
                 document.querySelectorAll('.cart-item').forEach(item => {
-                    const priceElement = item.querySelector('.fw-bold').textContent;
-                    const price = parseFloat(priceElement.replace('Rs', ''));
+                    const price = parseFloat(item.querySelector('.fw-bold').dataset.price);
                     const qty = parseInt(item.querySelector('.cart-qty').value) || 1;
                     currentTotal += price * qty;
                 });
 
                 let discount = 0;
-                if (bookIdxs.length >= 3) discount += 0.05;
+                if (bookIdxs.length >= 5) discount = 0.10;
+                else if (bookIdxs.length >= 3) discount = 0.05;
 
                 const discountedTotal = currentTotal - currentTotal * discount;
-                document.getElementById('cartTotal').textContent = discountedTotal.toFixed(2);
+                
+                document.getElementById('cartTotal').textContent = discountedTotal.toFixed(2) + 
+                    (discount > 0 ? ` (Saved Rs${(currentTotal * discount).toFixed(2)})` : '');
             }
 
             updateCartTotal();
-            document.getElementById('cartDialogOverlay').style.display = 'flex'; 
+            document.getElementById('cartDialogOverlay').style.display = 'flex';
         }
-
-        function closeDialog(overlayId) {
-            document.getElementById(overlayId).style.display = 'none';
-        }
-
-        document.getElementById('policyBtn').onclick = () =>
-            document.getElementById('returnPolicyDialogOverlay').style.display = 'flex';
 
         function sendEmail() {
             const email = document.getElementById('email').value.trim();
             const mobile = document.getElementById('mobile')?.value.trim() || '';
             const message = document.getElementById('message').value.trim();
 
-            if (!email) {
-                alert('Please enter your email address.');
+            if (!email || !mobile) {
+                alert('Please enter both your email address and mobile number to proceed.');
                 return;
             }
 
             const mobileRegex = /^(070|071|072|074|075|076|077|078)\d{7}$/;
             if (!mobileRegex.test(mobile)) {
-                alert('Please enter a valid Sri Lankan mobile number (e.g., 0712345678).');
+                alert('Please enter a valid Sri Lankan mobile number (e.g., 07XXXXXXXX).');
                 return;
             }
 
-            const cartItems = [];
-            document.querySelectorAll('.cart-qty').forEach(input => {
-                const idx = parseInt(input.dataset.idx);
-                const qty = parseInt(input.value) || 1;
-                cartItems.push({ ...books[idx], quantity: qty });
+            let currentTotal = 0;
+            const itemsForEmail = [];
+            const cartItemsElements = document.querySelectorAll('.cart-item');
+            
+            cartItemsElements.forEach(item => {
+                const idx = parseInt(item.querySelector('.cart-qty').dataset.idx);
+                const qty = parseInt(item.querySelector('.cart-qty').value) || 1;
+                const book = books[idx];
+                const subTotal = book.price * qty;
+                currentTotal += subTotal;
+
+                itemsForEmail.push({
+                    title: book.title,
+                    author: book.author,
+                    price: book.price,
+                    quantity: qty,
+                    subTotal: subTotal
+                });
             });
 
-            if (cartItems.length === 0) {
-                alert('Your cart is empty.');
-                return;
-            }
+            let discount = 0;
+            if (itemsForEmail.length >= 5) discount = 0.10;
+            else if (itemsForEmail.length >= 3) discount = 0.05;
 
-            let orderDetails = '--- BOOK ORDER DETAILS ---\n';
-            let total = 0;
-            cartItems.forEach(item => {
-                const subTotal = item.price * item.quantity;
-                orderDetails += `${item.title} by ${item.author}\n  Rs.${item.price.toFixed(2)} x ${item.quantity} = Rs.${subTotal.toFixed(2)}\n\n`;
-                total += subTotal;
+            const discountedTotal = currentTotal - currentTotal * discount;
+
+            let orderDetails = '--- BOOK ORDER REQUEST ---\n\n';
+            itemsForEmail.forEach(item => {
+                orderDetails += `${item.title} (${item.author})\n  Qty: ${item.quantity} | Unit Price: Rs.${item.price.toFixed(2)} | Subtotal: Rs.${item.subTotal.toFixed(2)}\n\n`;
             });
-            orderDetails += `TOTAL AMOUNT: Rs.${total.toFixed(2)}\n\n`;
 
-            const note = `📸 Please attach the screenshot of your order summary before sending this email.\n\n`;
+            orderDetails += `--------------------------------------\n`;
+            orderDetails += `Sub Total: Rs.${currentTotal.toFixed(2)}\n`;
+            orderDetails += `Discount: ${discount * 100}%\n`;
+            orderDetails += `FINAL TOTAL: Rs.${discountedTotal.toFixed(2)}\n`;
+            orderDetails += `--------------------------------------\n\n`;
+
+            const note = `(ATTENTION: Please check for the attached order screenshot if you captured one.)\n\n`;
             const body = encodeURIComponent(
                 `${note}${orderDetails}Customer Details:\nEmail: ${email}\nMobile: ${mobile}\n\nAdditional Message:\n${message || 'N/A'}`
             );
 
-            const subject = encodeURIComponent('📘 Book Sale Order Request');
+            const subject = encodeURIComponent(`📘 New Order Request - Rs.${discountedTotal.toFixed(2)}`);
             const to = 'infothebookmarkedlife@gmail.com';
 
-            window.open(
-                `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`,
-                '_blank'
-            );
-        }
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+            const mailtoUrl = `mailto:${to}?subject=${subject}&body=${body}`;
 
-        function captureDialog() {
-            html2canvas(document.getElementById('cartDialog')).then(canvas => {
+            if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                window.location.href = mailtoUrl;
+            } else {
+                window.open(gmailUrl, '_blank');
+            }
+            html2canvas(document.getElementById('cartDialog'), {
+                 scrollX: 0, 
+                 scrollY: 0,
+                 useCORS: true 
+            }).then(canvas => {
                 const img = document.getElementById('cartImgPreview');
-                img.src = canvas.toDataURL();
+                img.src = canvas.toDataURL('image/png');
                 img.classList.remove('d-none');
+                
+                alert('Screenshot captured! The image is displayed below. Please download it and attach it to the email before sending.');
+            }).catch(error => {
+                console.error('Screenshot failed:', error);
+                alert('Could not capture screenshot. Please proceed with the email and include all order details.');
             });
         }
 
-        updateCartCount();
+        document.getElementById('policyBtn').onclick = () =>
+            document.getElementById('returnPolicyDialogOverlay').style.display = 'flex';
+            
+        document.getElementById('instructionBtn').onclick = () =>
+            document.getElementById('instructionDialogOverlay').style.display = 'flex';
+
+        updateCartCount(); 
     </script>
 </body>
 </html>
