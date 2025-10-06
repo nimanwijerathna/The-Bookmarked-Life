@@ -19,12 +19,11 @@
             font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f6f9; /* Slightly darker light gray for background */
+            background-color: #f4f6f9; 
         }
 
-        /* --- Header/Navigation Styling --- */
         .header-bar {
-            background-color: var(--primary-color);
+            background-color: #F6F2E9;
             color: white;
             padding: 10px 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
@@ -37,29 +36,30 @@
             font-weight: 700;
         }
 
-        /* --- Main Content Container --- */
         .container {
             max-width: 1200px;
-            margin: 20px auto; /* Reduced margin for mobile */
+            margin: 20px auto; 
             border-radius: 10px;
             box-shadow: 0 4px 20px var(--shadow-color);
             padding: 30px;
             background: #fff;
         }
+
+        .logo{
+            height: 50px;
+        }
         
         @media (max-width: 768px) {
             .container {
-                margin: 0 auto 20px auto; /* No top/bottom margin on mobile */
+                margin: 0 auto 20px auto;
                 padding: 15px;
                 border-radius: 0;
             }
         }
 
-        /* --- Product Grid Styling --- */
         #book-grid {
-            /* Uses auto-fit and minmax for perfect responsiveness */
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjusted min-width for better mobile layout */
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
@@ -80,8 +80,8 @@
         }
 
         .book-card img {
-            width: 100%; /* Make image width relative to card */
-            max-width: 120px; /* Set max width */
+            width: 100%; 
+            max-width: 120px;
             height: 180px;
             object-fit: cover;
             border-radius: 4px;
@@ -93,7 +93,7 @@
             font-size: 0.95em;
             font-weight: 600;
             color: #343a40;
-            min-height: 38px; /* Ensures consistent layout */
+            min-height: 38px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
@@ -120,7 +120,6 @@
             font-weight: 600;
         }
 
-        /* --- Dialog Styles (Consolidated and improved) --- */
         .dialog-overlay {
             display: none;
             position: fixed;
@@ -130,26 +129,23 @@
             height: 100vh;
             background: rgba(0, 0, 0, 0.6);
             z-index: 1000;
-            padding: 10px; /* Padding for mobile safety */
+            padding: 10px; 
         }
 
         .dialog {
             background: #fff;
             border-radius: 10px;
             max-width: 420px;
-            /* Using a max height of 90vh is key for responsiveness */
-            max-height: 90vh; 
             margin: 40px auto; 
             padding: 24px;
             position: relative;
             box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
             animation: fadeIn 0.3s ease;
-            overflow-y: auto; /* Scrollable dialog content */
+            overflow-y: auto; 
             display: flex;
             flex-direction: column;
         }
         
-        /* Mobile adjustment for dialogs */
         @media (max-width: 576px) {
             .dialog {
                 max-width: 95%;
@@ -158,14 +154,13 @@
         }
 
         #cartItems {
-            /* Scrollable area for items list only */
             max-height: 250px;
             overflow-y: auto;
             border: 1px solid #e9ecef;
             padding: 10px;
             margin-bottom: 15px;
             border-radius: 5px;
-            flex-shrink: 0; /* Ensures it shrinks if height is small */
+            flex-shrink: 0; 
         }
 
         .cart-item {
@@ -199,7 +194,7 @@
 <body>
     <header class="header-bar">
         <div class="container d-flex justify-content-between align-items-center bg-transparent shadow-none p-0">
-            <h1 class="text-white"><i class="fas fa-book"></i> The Bookmarked Life</h1>
+            <h1 class="text-dark fs-6"><img src="images/logo.png" class="logo" alt="The Bookmarked Life Logo"> The Bookmarked Life</h1>
             <button class="btn btn-warning btn-sm" type="button" id="policyBtn">
                 <i class="fas fa-info-circle"></i> Policy
             </button>
@@ -283,9 +278,9 @@
             <h2 class="h4 text-warning"><i class="fas fa-undo-alt"></i> Return & Cancellation Policy</h2>
             <hr>
             <ul>
-                <li>Orders may be cancelled **before** payment and confirmation.</li>
+                <li>Orders may be cancelled <b>before</b> payment and confirmation.</li>
                 <li>Once confirmed and paid, cancellations cannot be made.</li>
-                <li>Refunds (if applicable) will be processed within **5–7 working days** after verification.</li>
+                <li>Refunds (if applicable) will be processed within <b>5–7 working days</b> after verification.</li>
             </ul>
             <hr>
             <p class="text-secondary small">
@@ -337,7 +332,6 @@
                 const index = parseInt(e.currentTarget.dataset.idx);
                 if (!cartIndices.includes(index)) {
                     cartIndices.push(index);
-                    // Provide visual feedback for added item
                     e.currentTarget.classList.replace('btn-success', 'btn-primary');
                     e.currentTarget.innerHTML = '<i class="fas fa-check"></i> Added';
                     setTimeout(() => {
@@ -371,7 +365,7 @@
             document.getElementById('detailAuthor').textContent = book.author;
             document.getElementById('detailPrice').textContent = book.price.toFixed(2);
             document.getElementById('detailImage').src = book.image;
-            document.getElementById('bookDetailDialogOverlay').style.display = 'flex'; // Use flex to center overlay content
+            document.getElementById('bookDetailDialogOverlay').style.display = 'flex'; 
         }
 
         function openDialog(bookIdxs) {
@@ -396,8 +390,7 @@
                 `;
                 cartItemsDiv.appendChild(itemDiv);
             });
-            
-            // Calculate total and apply discount
+
             document.querySelectorAll('.cart-qty').forEach(input => {
                 input.addEventListener('change', () => {
                     updateCartTotal();
@@ -421,7 +414,7 @@
             }
 
             updateCartTotal();
-            document.getElementById('cartDialogOverlay').style.display = 'flex'; // Use flex to center overlay content
+            document.getElementById('cartDialogOverlay').style.display = 'flex'; 
         }
 
         function closeDialog(overlayId) {
